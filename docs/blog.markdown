@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Prior work"
-permalink: /work
+title: "Blog"
+permalink: /blog
 ---
 
 # Blog 
