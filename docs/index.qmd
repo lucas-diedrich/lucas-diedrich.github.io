@@ -1,7 +1,9 @@
 ---
-title: "docs"
+title: "About"
 ---
 
-This is a Quarto website.
+Hi, nice to meet you! I'm Lucas. 
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+I am a student of biochemistry at the University Heidelberg, currently working as a visiting student at the Shalek Lab in Boston. 
+
+My interests lay in using computatinal approaches to better understand cellular biology, especially our immune system in the context of diseases and cellular dysfunction. 

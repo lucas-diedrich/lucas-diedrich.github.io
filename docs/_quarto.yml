@@ -1,19 +1,26 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "docs"
+  title: "lucas-diedrich.github.io"
   navbar:
+    search: true
+    background: "#A2D9CE"
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - work.qmd
+      - blog.qmd
 
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
+
+execute:
+  freeze: auto
 
 
 
