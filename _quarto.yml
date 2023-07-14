@@ -6,12 +6,18 @@ website:
   title: "lucas-diedrich.github.io"
   navbar:
     search: true
-    background: "#A2D9CE"
+    foreground: "#efefef"
+    background: "#059276"
     left:
       - href: index.qmd
         text: Home
       - work.qmd
-      - blog.qmd
+      - blog.qmd  
+    tools: 
+      - icon: twitter 
+        href: https://twitter.com/lucas__1406/
+      - icon: github 
+        href: https://github.com/lucas-diedrich
 
 format:
   html:
