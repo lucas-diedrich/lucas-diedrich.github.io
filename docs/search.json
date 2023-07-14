@@ -5,5 +5,75 @@
     "title": "About",
     "section": "",
     "text": "Hi, nice to meet you! I’m Lucas.\nI am a student of biochemistry at the University Heidelberg, currently working as a visiting student at the Shalek Lab in Boston.\nMy interests lay in using computatinal approaches to better understand cellular biology in the context of diseases and cellular dysfunction."
+  },
+  {
+    "objectID": "work.html#education",
+    "href": "work.html#education",
+    "title": "Work",
+    "section": "Education",
+    "text": "Education\n2021 - today  Biochemistry M.Sc. Ruprecht-Karls-University Heidelberg\n2018 - 2021  Biochemistry B.Sc. Eberhard Karls University Tuebingen"
+  },
+  {
+    "objectID": "work.html",
+    "href": "work.html",
+    "title": "Work",
+    "section": "",
+    "text": "May 2023 - today  Shalek Lab Broad Institute/Ragon Institue/MIT, Boston\nFebruary 2022 - March 2023  Graeter Lab Heidelberg Institute for Theoretical Studies\nSeptember 2022 - December 2023  Alexandrov Lab EMBL Heidelberg\nMay 2022 - July 2023  Russell Lab Bioquant Heidelberg\nMarch 2022 - October 2023  Hartmann Group Max Planck Institute for Biology, Tuebingen"
+  },
+  {
+    "objectID": "work.html#relevant-experience",
+    "href": "work.html#relevant-experience",
+    "title": "Work",
+    "section": "",
+    "text": "May 2023 - today  Shalek Lab Broad Institute/Ragon Institue/MIT, Boston\nFebruary 2022 - March 2023  Graeter Lab Heidelberg Institute for Theoretical Studies\nSeptember 2022 - December 2023  Alexandrov Lab EMBL Heidelberg\nMay 2022 - July 2023  Russell Lab Bioquant Heidelberg\nMarch 2022 - October 2023  Hartmann Group Max Planck Institute for Biology, Tuebingen"
+  },
+  {
+    "objectID": "work.html#scholarships",
+    "href": "work.html#scholarships",
+    "title": "Work",
+    "section": "Scholarships",
+    "text": "Scholarships\nGerman Scholarship Foundation\nDeutschlandstipendium"
+  },
+  {
+    "objectID": "index.html#interests",
+    "href": "index.html#interests",
+    "title": "About",
+    "section": "Interests",
+    "text": "Interests"
+  },
+  {
+    "objectID": "index.html#projects",
+    "href": "index.html#projects",
+    "title": "About",
+    "section": "Projects",
+    "text": "Projects"
+  },
+  {
+    "objectID": "index.html#my-interests",
+    "href": "index.html#my-interests",
+    "title": "About",
+    "section": "My interests",
+    "text": "My interests"
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "lucas-diedrich.github.io",
+    "section": "",
+    "text": "Hello-world\n\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2023\n\n\n\n\n\n\n  \n\n\n\n\nYour birthday might kill you!\n\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2023\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2023-07-13-hello-world/hello-world.html",
+    "href": "posts/2023-07-13-hello-world/hello-world.html",
+    "title": "Hello-world",
+    "section": "",
+    "text": "My first blog post! So exciting!"
+  },
+  {
+    "objectID": "posts/2023-07-13-hello-world/hello-world.html#hello-world",
+    "href": "posts/2023-07-13-hello-world/hello-world.html#hello-world",
+    "title": "Hello-world",
+    "section": "",
+    "text": "My first blog post! So exciting!"
   }
 ]

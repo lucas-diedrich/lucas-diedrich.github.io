@@ -12,7 +12,8 @@ website:
       - href: index.qmd
         text: Home
       - work.qmd
-      - blog.qmd  
+      - text: "Blog"
+        href: "./posts/" 
     tools: 
       - icon: twitter 
         href: https://twitter.com/lucas__1406/
