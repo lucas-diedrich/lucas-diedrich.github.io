@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>lucas-diedrich.github.io - About</title>
+<title>lucas-diedrich.github.io - Gzip is all you need? - Cell type annotation with a meme algorithm</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,25 +20,44 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -60,8 +79,10 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -71,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">lucas-diedrich.github.io</span>
     </a>
   </div>
@@ -82,15 +103,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./work.html" rel="" target="">
+    <a class="nav-link" href="../../work.html" rel="" target="">
  <span class="menu-text">Work</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="././posts/" rel="" target="">
+    <a class="nav-link" href="../.././posts/" rel="" target="">
  <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -107,14 +128,21 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Gzip is all you need? - Cell type annotation with a meme algorithm</h1>
 </div>
 
 
@@ -129,14 +157,92 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Hi, nice to meet you! I’m Lucas.</p>
-<p>I am a student of biochemistry at Heidelberg University, currently working as a visiting student at the Shalek Lab in Boston.</p>
-<p>My interests lay in using computatinal approaches to better understand cellular biology in the context of diseases and cellular dysfunction (see also <a href="./work.html">Work</a>). I am especially fascinated by omics technologies.</p>
-<!-- ## Projects -->
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Recently, <a href="https://twitter.com/LukeGessler/status/1679211291292889100?s=20">this tweet</a>, talking about <a href="https://aclanthology.org/2023.findings-acl.426">this very creative and interesting paper</a> <span class="citation" data-cites="jiang.2023">(<a href="#ref-jiang.2023" role="doc-biblioref">Jiang et al. 2023</a>)</span> blew up on twitter. To keep it short, the authors demonstrated that a simple .gzip compression of text-based data, in combination with a kNN classifier performed as well on text classification tasks as state-of-the-art natural language models (here: BERT). Especially in cases of small to medium-sized datasets (where the training data does not suffice to sufficiently fine tune large language models), the minimalistic algorithm (XXX lines of <code>python</code> code ) performed extremely well. Intriguingly, it does not use <strong>any tuning parameters</strong>. This is of course somewhat embarassing<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> for our multi-million dollar, Big Tech-backed deep learning models, trained on millions of GPU hours. Probs to the authors!</p>
+<p>In recent history, the life sciences have somewhat blindly followed the latest deep-learning hype (to be fair - very often with great success), by transferring their favorite model type onto a biological question of choice (see <a href="#tbl-bio-deeplearning">Table&nbsp;1</a>), typically protein design or <em>-omics</em>.</p>
+<p>Of course, this has also been the case for our latest hype algorithm!!! The paper was almost immediately adapted to the prediction of molecular properties of small molecules (<span class="citation" data-cites="probst.2023">Probst (<a href="#ref-probst.2023" role="doc-biblioref">2023</a>)</span>, see <a href="https://github.com/daenuprobst/molzip">Github</a> and <a href="https://twitter.com/skepteis/status/1679855401162924032?s=20">Twitter</a>). This raises the question - <strong>can we throw also our latest hype algorithm on omics data?</strong></p>
+<div id="tbl-bio-deeplearning" class="anchored">
+<table class="table">
+<caption>Table&nbsp;1: Greatly incomplete overview of classes of deep learning models that have been enslaved by the life sciences /s</caption>
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Model type</th>
+<th style="text-align: left;">Original Publication</th>
+<th style="text-align: left;">Original Field</th>
+<th style="text-align: left;">Bio Publication</th>
+<th style="text-align: left;">Bio field</th>
+<th style="text-align: left;"><span class="math inline">\(\Delta\)</span> time (years)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Transformer models</td>
+<td style="text-align: left;">Attention is all you need</td>
+<td style="text-align: left;">Natural Language Processing</td>
+<td style="text-align: left;">scGPT</td>
+<td style="text-align: left;">single cell RNAseq</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Diffusion models</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">RF-diffusion</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Variational Autoencoders</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Conditional Variational Autoencoders</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">scARCHES, scPOLI</td>
+<td style="text-align: left;">single cell RNAseq</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="method" class="level2">
+<h2 class="anchored" data-anchor-id="method">Method</h2>
+<!-- Let's do that! We have all of the ingredients we need - a somewhat interesting model and our favorite field in biology - single cell RNAseq.  -->
+<p>In this post, I will implement the algorithm for single cell omics data and test it on a cell type classification task.</p>
 
 
 
-</main> <!-- /main -->
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-jiang.2023" class="csl-entry" role="listitem">
+Jiang, Zhiying, Matthew Yang, Mikhail Tsirlin, Raphael Tang, Yiqin Dai, and Jimmy Lin. 2023. <span>“<span>“</span>Low-Resource<span>”</span> Text Classification: A Parameter-Free Classification Method with Compressors.”</span> In <em>Findings of the Association for Computational Linguistics: ACL 2023</em>, 6810–28. Toronto, Canada: Association for Computational Linguistics. <a href="https://aclanthology.org/2023.findings-acl.426">https://aclanthology.org/2023.findings-acl.426</a>.
+</div>
+<div id="ref-probst.2023" class="csl-entry" role="listitem">
+Probst, Daniel. 2023. <span>“Daenuprobst/Molzip: Initial Release.”</span> Zenodo. <a href="https://doi.org/10.5281/zenodo.8147242">https://doi.org/10.5281/zenodo.8147242</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>To be fair - obviously, text classification is <em>not</em> the main training objective for LLM!<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

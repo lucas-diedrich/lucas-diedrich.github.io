@@ -2,42 +2,77 @@
 title: "Work"
 ---
 
+> My goal is to contribute to the understanding of the driving biological mechanisms of diseases in order to develop new cures, with a special fascination for our immune system. I am particuarly interested in combining existing public resources, mechanistic understanding of diseases and high throughput/omics data using computational methods to a more complete picture of the underlying causes.
 
+ 
 ## Relevant experience 
 
 *May 2023 - today* <br>
-**Shalek Lab** Broad Institute/Ragon Institue/MIT, Boston 
-
-
-*February 2022 - March 2023* <br>
-**Graeter Lab** Heidelberg Institute for Theoretical Studies 
-
+**Shalek Lab** Broad Institute | Ragon Institute of Harvard, MIT and MGH | IMES/MIT | Boston <br>
+Metaanalysis of recurrent T cell states in health and disease
 
 *September 2022 - December 2023* <br>
-**Alexandrov Lab** EMBL Heidelberg 
+**Alexandrov Lab** EMBL Heidelberg | Heidelberg <br>
+Integrating immunocytochemistry with single cell metabolomics in primary human CD4^+^ T cells for drug screening. Experimental work, data analysis and computational work. 
 
+*February 2022 - March 2023* <br>
+**Graeter Lab** Heidelberg Institute for Theoretical Studies | Heidelberg <br>
+Evaluation of the membrane permeability of small molecules with molecular dynamics simulations. Establishing a computational pipeline for data analysis. ([Preprint](https://doi.org/10.1101/2023.03.27.534360))
 
 *May 2022 - July 2023* <br>
-**Russell Lab** Bioquant Heidelberg 
-
+**Russell Lab** Bioquant | Heidelberg <br>
+Computational biology. Evaluating the pathogenicity of missense variants in protein domains using public resources. 
 
 *March 2022 - October 2023* <br>
-**Hartmann Group** Max Planck Institute for Biology, Tuebingen 
-
+**Hartmann Group** Max Planck Institute for Biology | Tuebingen <br>
+Establishing a biophysical assay for the screening of natural and artificial ligands of the E3 ligase Cereblon. 
 
 
 ## Education 
 
 *2021 - today* <br>
-**Biochemistry M.Sc.** Ruprecht-Karls-University Heidelberg
-
+**Biochemistry M.Sc.** Ruprecht-Karls-University Heidelberg | Heidelberg <br>
+Computational biology, biophysics, drug discovery 
 
 *2018 - 2021* <br>
-**Biochemistry B.Sc.** Eberhard Karls University Tuebingen
+**Biochemistry B.Sc.** Eberhard Karls University Tuebingen | Tuebingen <br>
+<!-- Final Grade: 1.1  -->
+
+
+## Social 
+
+*2023* <br>
+**Member/Organizer** German American Conference <br>
+Functional team social events
+
+*2022 - today* <br>
+**IT-Team** Student Body Chemistry/Biochemistry, Heidelberg <br>
+Member - Maintenance of website and IT infrastructure, email communication. 
+
+*2020-2021* <br>
+**Treasurer** Student Body Biochemistry, Tuebingen <br>
+Treasurer of for the student body, an organization with 300 members. 
+
+*2021* <br>
+**STEM representative** - University of Tuebingen <br>
+Representing the subject biochemistry at local high schools to motivate young talents for a career in STEM. 
+
+<!-- ## Publications 
+
+Energetics and kinetics of membrane permeation of photoresists for bioprinting Lucas Diedrich, Matthias Brosz, Tobias Abele, Salome Steinke, Frauke Gräter, Kerstin Göpfrich, Camilo Aponte-Santamaría bioRxiv 2023.03.27.534360; doi: https://doi.org/10.1101/2023.03.27.534360 -->
+
+## Software packages 
+
+
+**ipathapy** Python | [github](https://github.com/lucas-diedrich/ipathapy.git)<br>
+A python package to create metabolic path maps with ipath3 
+
 
 
 ## Scholarships 
 
+*December 2020 - today* <br>
 **German Scholarship Foundation**
 
+*March 2020 - December 2020* <br>
 **Deutschlandstipendium**

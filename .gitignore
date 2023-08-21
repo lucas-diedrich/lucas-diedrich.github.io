@@ -1,1 +1,7 @@
+./.quarto/
+
+posts/_*
+
 /.quarto/
+
+/env/

@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -61,6 +95,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -108,7 +144,21 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#modeling" id="toc-modeling" class="nav-link active" data-scroll-target="#modeling">Modeling</a>
+  <ul class="collapse">
+  <li><a href="#prior-assumptions" id="toc-prior-assumptions" class="nav-link" data-scroll-target="#prior-assumptions">Prior assumptions</a></li>
+  <li><a href="#the-model" id="toc-the-model" class="nav-link" data-scroll-target="#the-model">The model</a></li>
+  </ul></li>
+  <li><a href="#intuition" id="toc-intuition" class="nav-link" data-scroll-target="#intuition">Intuition</a></li>
+  <li><a href="#quick-maths" id="toc-quick-maths" class="nav-link" data-scroll-target="#quick-maths">Quick maths</a></li>
+  <li><a href="#the-real-world" id="toc-the-real-world" class="nav-link" data-scroll-target="#the-real-world">The real world</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -136,10 +186,166 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>I recently attended a very enjoyable open-air performance of Shakespear’s <em>Macbeth</em>. Given my limited knowledge about the piece and English literature in general, I did the thing that most of the peers in my generation would do and I read the <a href="https://en.wikipedia.org/wiki/William_Shakespeare">Wikipedia page on William Shakespeare</a> in advance. Unfortunately, I did not get past the first paragraph as it immediately caught my eye that Shakespeare <strong>died on his birthday</strong>. Very tragic!<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>But is it though? After thinking about it for a while, I came to the (for me) surprising conclusion that we might be statistically prone to die on our birthday… In this post, I will share with you my finding that in a model world, the most probable day of your death will be your birthday. So watch out!</p>
+<section id="modeling" class="level2">
+<h2 class="anchored" data-anchor-id="modeling">Modeling</h2>
+<p>Don’t believe me? Let’s start with a simulation.</p>
+<section id="prior-assumptions" class="level3">
+<h3 class="anchored" data-anchor-id="prior-assumptions">Prior assumptions</h3>
+<p>In order to facilitate the computations, I will first create a model simpliefied model world with the following assumptions/simplifications:</p>
+<ol type="1">
+<li>For every day in your life, it is equally likely for you to die.</li>
+</ol>
+<p>This assumption is clearly not accurate (for humans). For example, infants or people above age 50 have a significantly higher chance of death than people in their twenties (see the official <a href="https://www.ssa.gov/oact/STATS/table4c6.html">actuarial life table</a> of the US social security office). However, it is probably relatively safe to assume that the likelihood to die is more or less <strong>smooth</strong> and <strong>changing slowly</strong>, i.e.&nbsp;we would not expect any sudden changes in the likelihood of death within a an age cohort. As we will essentially compare the likelihood of death per day within the same year, our model is still valid. We also dismiss any seasonal changes (e.g.&nbsp;heat deaths in the summer or flu in the winter) that might affect the results.</p>
+<ol start="2" type="1">
+<li>Planet MB-15640423</li>
+</ol>
+<p>In order to make the observed trends more significant, I will assume for now that we observe life on a planet with very short year of only 10 days. However, the observed trends will also hold true for any other length of the year, but might not be as obvious to see.<br>
+To further simplify the computations, we also assume that our planet does not have any leap years.</p>
+</section>
+<section id="the-model" class="level3">
+<h3 class="anchored" data-anchor-id="the-model">The model</h3>
+<p>Based on these assumptions, we can create a simple simulation: We first define a function <code>life</code> that simulates the life of a single individual: For every day, the individual either survives or dies with a 5% probability <span class="math inline">\(p_{death}=0.05\)</span>. The function <code>life</code> runs until it reaches the day of death of the individual and then returns the number of days that the person survived (<code>days_lived</code>). We repeat that for a few thousand simulations (<em>individuals</em>) to get enough sampling.</p>
+<p>We can figure out whether the individual died on their birthday or not by using the remainder (modulo operation) of the division <span class="math inline">\(\frac{\text{days lived}}{\text{length of year}}\)</span>. E.g. if a person died on their birtday, they survived 0, 10, 20, 30, 40… days model world. When dividing by the length of the year the remainder will always be zero (Mathematically speaking: <span class="math inline">\(y\times \text{length of year} \equiv 0 \:\text{mod}\:\text{length of year}\)</span> for <span class="math inline">\(y \in \mathbb{N}^0\)</span>). If a person dies one day after their birthday, the fraction <span class="math inline">\(\frac{\text{days lived}}{\text{length of year}}\)</span> will have the remainder 1 and so on…</p>
+<p>Implementing this model in python (see hidden code cells) and plotting the results looks like this:</p>
+<div class="cell" data-execution_count="1">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import modules</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Parameters</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>np.random.seed <span class="op">=</span> <span class="dv">15640423</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>plot_params <span class="op">=</span> <span class="bu">dict</span>(</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    marker<span class="op">=</span><span class="st">'o'</span>, </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    linestyle<span class="op">=</span><span class="st">''</span>, </span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    color<span class="op">=</span><span class="st">'#45B39D'</span>, </span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    markeredgecolor<span class="op">=</span><span class="st">'k'</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>N_individuals <span class="op">=</span> <span class="dv">10000</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>length_of_year <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>probability_of_death <span class="op">=</span> <span class="fl">0.05</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell" data-execution_count="2">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> life(probability_of_death: <span class="bu">float</span> <span class="op">=</span> <span class="fl">0.05</span>):</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">""" Simulate length of a life given a constant </span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">    probability of death every day """</span> </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    days_lived <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> np.random.random() <span class="op">&gt;</span> probability_of_death: </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        days_lived <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> days_lived </span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate N_individuals lives </span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>days_lived <span class="op">=</span> [life(probability_of_death) <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(N_individuals)]</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Get day of year (0-birthday, 1-day after birthday ...)</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>day_of_year <span class="op">=</span> [dl <span class="op">%</span> length_of_year <span class="cf">for</span> dl <span class="kw">in</span> days_lived]</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>day, counts <span class="op">=</span> np.unique(day_of_year, return_counts<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>rel_to_expected <span class="op">=</span> counts<span class="op">/</span>np.<span class="bu">sum</span>(counts)</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>,<span class="dv">1</span>, figsize<span class="op">=</span>(<span class="dv">7</span>,<span class="dv">4</span>))</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>ax.plot(day, rel_to_expected, <span class="op">**</span>plot_params)</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>ax.axhline(<span class="dv">1</span><span class="op">/</span>length_of_year, <span class="dv">0</span>, <span class="dv">1</span>, </span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>           color<span class="op">=</span><span class="st">'#cccccc'</span>, </span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>           label<span class="op">=</span><span class="st">'Expected by equal chance'</span>)</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">'Observed deaths/Expected deaths'</span>)</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="ss">f'Day relative to birthday in </span><span class="sc">{</span>length_of_year<span class="sc">}</span><span class="ss">-day year'</span>)</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>ax.annotate(<span class="st">'Birthday'</span>, xy<span class="op">=</span>(<span class="dv">0</span>, rel_to_expected[<span class="dv">0</span>]), xytext<span class="op">=</span>(<span class="dv">5</span>,<span class="dv">0</span>), xycoords<span class="op">=</span><span class="st">'data'</span>, textcoords<span class="op">=</span><span class="st">'offset points'</span>, va<span class="op">=</span><span class="st">'center'</span>, ha<span class="op">=</span><span class="st">'left'</span>)</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="2023-07-13-dangerous-birthdays_files/figure-html/cell-3-output-1.png" width="597" height="356" class="figure-img"></p>
+<figcaption class="figure-caption">Observed number of deaths at a day X after birthday divided by the expected number of deaths if we assume that it is equally likely for a person to die on any day of the year.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>What we see is that <em>in our simulation/toy example</em>, it is almost 30% more likely for an individual to die on their birthday than we would expect by random chance. Furthermore, the likelihood to die on day 1, 2, 3, … after ones birthday steadily decreases. But why?</p>
+</section>
+</section>
+<section id="intuition" class="level2">
+<h2 class="anchored" data-anchor-id="intuition">Intuition</h2>
+<p>The underlying concept is straightforward. On our birthday, we inevitably face an equal or greater likelihood of mortality compared to any other day. To elaborate, consider a scenario in which we analyze the lives of a whole population of individuals, as we did in our simulation. While most individuals would survive their actual birth date, regrettably, there exists a nonzero probability that someone might pass away precisely on that day, thereby decreasing the total population. Consequently, when the probability of death remains constant, fewer individuals, on average, will add to the count of deaths on the day following their birthday, and so forth. As the birthday will always be the first day in every new year, there will always be <em>more</em> individuals available at their birthday than any other day. This leads to the fact that in a full population, more deaths would occur on birthdays than any other day.</p>
+</section>
+<section id="quick-maths" class="level2">
+<h2 class="anchored" data-anchor-id="quick-maths">Quick maths</h2>
+<p>We can also derive an analytical solution for this problem. Given the probability <span class="math inline">\(x\)</span> to die on a certain day, the probability of survival on a certain day can be written as counter-probability:</p>
+<p><span class="math display">\[\begin{equation}
+    P(X: \text{survival on one day}) = 1 - x
+\end{equation}\]</span></p>
+<p>Assuming independence of events, the probability to die on the <span class="math inline">\(n\)</span>th day of your life will be the product of probabilities to survive for <span class="math inline">\(n-1\)</span> days times the probability to die on day <span class="math inline">\(n\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+    P(Y: \text{death on day n}) = (1 - x)^{n-1}\cdot x
+\end{equation}\]</span></p>
+<p>Corresponding to an exponential decay. Now we know the probability to die on any day and can derive a formula to die on a birthday: For every year 0, 1 … <span class="math inline">\(\infty\)</span>, we will just add up the probability to die on the day corresponding to your birthday. So we need to add up the probabilities to die on day 0, day <span class="math inline">\(1\times \text{length of year}\)</span>, day <span class="math inline">\(2\times \text{length of year}\)</span>, day <span class="math inline">\(3\times \text{length of year}\)</span>, …</p>
+<p>This leads to the formula</p>
+<p><span class="math display">\[\begin{equation}
+    P(\text{death on birthday}) = \sum_{y=0}^{\infty}{(1 - x)^{(\text{length of year}\times y-1)}\cdot x}
+\end{equation}\]</span></p>
+<p>Generalizing this to any day <span class="math inline">\(0\leq d \leq \text{length of the year}-1\)</span> after ones birthday in the year:</p>
+<p><span class="math display">\[\begin{equation}
+    P(d) = \sum_{y=0}^{\infty}{(1 - x)^{(\text{length of year}\times y+d-1)}\cdot x}
+\end{equation}\]</span></p>
+<p>Taking constant terms out of the sum:</p>
+<p><span class="math display">\[\begin{equation}
+    P(d) = x\cdot (1-x)^{(d-1)}\cdot \sum_{y=0}^{\infty}{(1 - x)^{(\text{length of year}\times y)}}
+\end{equation}\]</span></p>
+<p>And using the definition of the geometric series for <span class="math inline">\(1-x&lt;1\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+    P(d) =  x\cdot (1-x)^{(d-1)}\cdot \frac{1}{x} = (1-x)^{(d-1)}
+\end{equation}\]</span></p>
+<p>This means that for any day after your birthday decays exponentially.</p>
+<!-- Missing - normalization -->
+<div class="cell" data-execution_count="3">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>day_after_bday <span class="op">=</span> np.linspace(<span class="dv">0</span>, length_of_year, <span class="dv">100</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>pdeath <span class="op">=</span> np.power(<span class="dv">1</span><span class="op">-</span>probability_of_death, day_after_bday)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>,<span class="dv">1</span>, figsize<span class="op">=</span>(<span class="dv">7</span>,<span class="dv">5</span>))</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>ax.plot(day_after_bday, pdeath, marker<span class="op">=</span><span class="st">''</span>, linestyle<span class="op">=</span><span class="st">'-'</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="2023-07-13-dangerous-birthdays_files/figure-html/cell-4-output-1.png" width="579" height="411"></p>
+</div>
+</div>
+</section>
+<section id="the-real-world" class="level2">
+<h2 class="anchored" data-anchor-id="the-real-world">The real world</h2>
+<p><a href="https://en.wikipedia.org/wiki/Birthday_effect">Birthday effect</a></p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>In this blog post we have looked at the somewhat surprising phenomenom that we are probably more likely to die on our birthday than any other day.</p>
+<p>I believe that the provided workflow can also be adapted for other scientific endevaours and especially computationally approaches: First, we observed an interesting phenomenom. We then started to build up an intuition for the problem by creating a model world, in which we tried to clearly articulate the underlying assumptions of our model. And finally, when we felt more comfortable with our intuition, we put in the effort and derived a more theoretically grounded model.</p>
 
 
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>And maybe also somewhat fitting for a person who almost exclusively wrote about tragedy and death<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
