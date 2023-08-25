@@ -305,7 +305,7 @@ plt.show()
 
 ```
 
-Although the statistical impact of this phenomenon is small, regrettably, there exists a genuine real-world occurrence known as the Birthday Effect, which suggests that individuals are more prone to passing away around the time of their birthdays than at other times. Yet, this correlation is rooted less in peculiar mathematics and more in tangible life factors, as the time around our birthdays is also associated with increased probabilities of alcohol and drug misuse, depressive periods, and other adversities that would be more fitting within the pages of a Shakespearean tale.
+Although the statistical impact of this phenomenon is small, regrettably, there exists a genuine real-world occurrence known as the [Birthday Effect](https://en.wikipedia.org/wiki/Birthday_effect), which suggests that individuals are more prone to passing away around the time of their birthdays than at other times. Yet, this correlation is rooted less in peculiar mathematics and more in tangible life factors, as the time around our birthdays is also associated with increased probabilities of alcohol and drug misuse, depressive periods, and other adversities that would be more fitting within the pages of a Shakespearean tale.
 
 ## Conclusion 
 
