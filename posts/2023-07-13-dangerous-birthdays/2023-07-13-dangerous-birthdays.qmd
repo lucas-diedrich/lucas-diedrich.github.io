@@ -129,7 +129,7 @@ replicates = (pd.concat(replicates, axis=1)
 
 # Compute mean and confidence interval 
 mean = replicates.mean(axis=1)
-ci = t.ppf(1-alpha_level/2, n_replicates)*replicates.std(axis=1)/np.sqrt(n_replicates)
+ci = t.ppf(1-alpha_level/2, n_replicates-1)*replicates.std(axis=1)/np.sqrt(n_replicates)
 
 ```
 
