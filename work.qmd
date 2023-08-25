@@ -61,15 +61,16 @@ Representing the subject biochemistry at local high schools to motivate young ta
 
 Energetics and kinetics of membrane permeation of photoresists for bioprinting Lucas Diedrich, Matthias Brosz, Tobias Abele, Salome Steinke, Frauke Gräter, Kerstin Göpfrich, Camilo Aponte-Santamaría bioRxiv 2023.03.27.534360; doi: https://doi.org/10.1101/2023.03.27.534360 -->
 
-## Software packages 
+## Software
 
+### Languages 
 
 **ipathapy** Python | [github](https://github.com/lucas-diedrich/ipathapy.git)<br>
 A python package to create metabolic path maps with ipath3 
 
 
 
-## Scholarships 
+## Rewards + Scholarships 
 
 *December 2020 - today* <br>
 **German Scholarship Foundation**

@@ -314,6 +314,6 @@ In this post we have looked at the somewhat surprising phenomenom that under som
 
 <!-- [^2]: One might tend to call them *life* -->
 
-Still, the general workflow behind this blog post might be transferable to other scientific endaveours and especially computationally approaches: First, we observed an interesting phenomenom. We then started to build up an intuition for the problem by creating a model world/simulation, in which we tried to clearly articulate the underlying assumptions of our model. And finally, when we felt more comfortable with our intuition, we put in the effort and derived a more theoretically grounded model and intuitive explanation. 
+Still, the general workflow behind this blog post might be transferable to other scientific endaveours and especially computational approaches: First, we observed an interesting phenomenom. We then started to build up an intuition for the problem by creating a model world/simulation, in which we tried to clearly articulate the underlying assumptions of our model. And finally, when we felt more comfortable with our intuition, we put in the effort and derived a more theoretically grounded model and intuitive explanation. 
 
 I hope that you learned a few things and that I could contribute to your collection of spurious knowledge. See you next time, and in the meantime, stay safe!
