@@ -4,56 +4,7 @@
     "href": "index.html",
     "title": "About",
     "section": "",
-    "text": "Hi, nice to meet you! I’m Lucas.\nI am a student of biochemistry at Heidelberg University, currently working as a visiting student at the Shalek Lab in Boston. My interests lay in using computational approaches to better understand cellular biology in the context of diseases and cellular dysfunction (see also Work). I am especially fascinated by omics technologies."
-  },
-  {
-    "objectID": "work.html#education",
-    "href": "work.html#education",
-    "title": "Work",
-    "section": "Education",
-    "text": "Education\n2021 - today  Biochemistry M.Sc. Ruprecht-Karls-University Heidelberg | Heidelberg  Computational biology, biophysics, drug discovery\n2018 - 2021  Biochemistry B.Sc. Eberhard Karls University Tuebingen | Tuebingen"
-  },
-  {
-    "objectID": "work.html",
-    "href": "work.html",
-    "title": "Work",
-    "section": "",
-    "text": "My goal is to contribute to the understanding of the driving biological mechanisms of diseases in order to develop new cures, with a special fascination for our immune system. I am particuarly interested in combining existing public resources, mechanistic understanding of diseases and high throughput/omics data using computational methods to a more complete picture of the underlying causes."
-  },
-  {
-    "objectID": "work.html#relevant-experience",
-    "href": "work.html#relevant-experience",
-    "title": "Work",
-    "section": "Relevant experience",
-    "text": "Relevant experience\nMay 2023 - today  Shalek Lab Broad Institute | Ragon Institute of Harvard, MIT and MGH | IMES/MIT | Boston  Metaanalysis of recurrent T cell states in health and disease\nSeptember 2022 - December 2023  Alexandrov Lab EMBL Heidelberg | Heidelberg  Integrating immunocytochemistry with single cell metabolomics in primary human CD4+ T cells for drug screening. Experimental work, data analysis and computational work.\nFebruary 2022 - March 2023  Graeter Lab Heidelberg Institute for Theoretical Studies | Heidelberg  Evaluation of the membrane permeability of small molecules with molecular dynamics simulations. Establishing a computational pipeline for data analysis. (Preprint)\nMay 2022 - July 2023  Russell Lab Bioquant | Heidelberg  Computational biology. Evaluating the pathogenicity of missense variants in protein domains using public resources.\nMarch 2022 - October 2023  Hartmann Group Max Planck Institute for Biology | Tuebingen  Establishing a biophysical assay for the screening of natural and artificial ligands of the E3 ligase Cereblon."
-  },
-  {
-    "objectID": "work.html#scholarships",
-    "href": "work.html#scholarships",
-    "title": "Work",
-    "section": "Scholarships",
-    "text": "Scholarships\nDecember 2020 - today  German Scholarship Foundation\nMarch 2020 - December 2020  Deutschlandstipendium"
-  },
-  {
-    "objectID": "index.html#interests",
-    "href": "index.html#interests",
-    "title": "About",
-    "section": "Interests",
-    "text": "Interests"
-  },
-  {
-    "objectID": "index.html#projects",
-    "href": "index.html#projects",
-    "title": "About",
-    "section": "Projects",
-    "text": "Projects"
-  },
-  {
-    "objectID": "index.html#my-interests",
-    "href": "index.html#my-interests",
-    "title": "About",
-    "section": "My interests",
-    "text": "My interests"
+    "text": "Hi, nice to meet you! I’m Lucas.\nI am a M.Sc. student of biochemistry at Heidelberg University, currently working as a visiting student at the Shalek Lab in Boston. My interests lay in using computational approaches to better understand cellular biology in the context of diseases and cellular dysfunction (see also Work). I am especially fascinated by integrating omics technologies with prior biological knowledge."
   },
   {
     "objectID": "posts/index.html",
@@ -70,69 +21,6 @@
     "text": "My first blog post! So exciting!"
   },
   {
-    "objectID": "posts/2023-07-13-hello-world/hello-world.html#hello-world",
-    "href": "posts/2023-07-13-hello-world/hello-world.html#hello-world",
-    "title": "Hello-world",
-    "section": "",
-    "text": "My first blog post! So exciting!"
-  },
-  {
-    "objectID": "posts/2023-07-15-gzip-classifier/gzip-classifer.html",
-    "href": "posts/2023-07-15-gzip-classifier/gzip-classifer.html",
-    "title": "Gzip is all you need? - Cell type annotation with a meme algorithm",
-    "section": "",
-    "text": "Recently, this tweet, talking about this very creative and interesting paper (Jiang et al. 2023) blew up on twitter. To keep it short, the authors demonstrated that a simple .gzip compression of text-based data, in combination with a kNN classifier performed as well on text classification tasks as state-of-the-art natural language models (here: BERT). Especially in cases of small to medium-sized datasets (where the training data does not suffice to sufficiently fine tune large language models), the minimalistic algorithm (XXX lines of python code ) performed extremely well. Intriguingly, it does not use any tuning parameters. This is of course somewhat embarassing1 for our multi-million dollar, Big Tech-backed deep learning models, trained on millions of GPU hours. Probs to the authors!\nIn recent history, the life sciences have somewhat blindly followed the latest deep-learning hype (to be fair - very often with great success), by transferring their favorite model type onto a biological question of choice (see Table 1), typically protein design or -omics.\nOf course, this has also been the case for our latest hype algorithm!!! The paper was almost immediately adapted to the prediction of molecular properties of small molecules (Probst (2023), see Github and Twitter). This raises the question - can we throw also our latest hype algorithm on omics data?\n\n\nTable 1: Greatly incomplete overview of classes of deep learning models that have been enslaved by the life sciences /s\n\n\n\n\n\n\n\n\n\n\nModel type\nOriginal Publication\nOriginal Field\nBio Publication\nBio field\n\\(\\Delta\\) time (years)\n\n\n\n\nTransformer models\nAttention is all you need\nNatural Language Processing\nscGPT\nsingle cell RNAseq\n\n\n\nDiffusion models\n\n\nRF-diffusion\n\n\n\n\nVariational Autoencoders\n\n\n\n\n\n\n\nConditional Variational Autoencoders\n\n\nscARCHES, scPOLI\nsingle cell RNAseq"
-  },
-  {
-    "objectID": "posts/2023-07-15-gzip-classifier/gzip-classifer.html#footnotes",
-    "href": "posts/2023-07-15-gzip-classifier/gzip-classifer.html#footnotes",
-    "title": "Gzip is all you need? - Cell type annotation with a meme algorithm",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nTo be fair - obviously, text classification is not the main training objective for LLM!↩︎"
-  },
-  {
-    "objectID": "posts/2023-07-15-gzip-classifier/gzip-classifer.html#introduction",
-    "href": "posts/2023-07-15-gzip-classifier/gzip-classifer.html#introduction",
-    "title": "Gzip is all you need? - Cell type annotation with a meme algorithm",
-    "section": "",
-    "text": "Recently, this tweet, talking about this very creative and interesting paper (Jiang et al. 2023) blew up on twitter. To keep it short, the authors demonstrated that a simple .gzip compression of text-based data, in combination with a kNN classifier performed as well on text classification tasks as state-of-the-art natural language models (here: BERT). Especially in cases of small to medium-sized datasets (where the training data does not suffice to sufficiently fine tune large language models), the minimalistic algorithm (XXX lines of python code ) performed extremely well. Intriguingly, it does not use any tuning parameters. This is of course somewhat embarassing1 for our multi-million dollar, Big Tech-backed deep learning models, trained on millions of GPU hours. Probs to the authors!\nIn recent history, the life sciences have somewhat blindly followed the latest deep-learning hype (to be fair - very often with great success), by transferring their favorite model type onto a biological question of choice (see Table 1), typically protein design or -omics.\nOf course, this has also been the case for our latest hype algorithm!!! The paper was almost immediately adapted to the prediction of molecular properties of small molecules (Probst (2023), see Github and Twitter). This raises the question - can we throw also our latest hype algorithm on omics data?\n\n\nTable 1: Greatly incomplete overview of classes of deep learning models that have been enslaved by the life sciences /s\n\n\n\n\n\n\n\n\n\n\nModel type\nOriginal Publication\nOriginal Field\nBio Publication\nBio field\n\\(\\Delta\\) time (years)\n\n\n\n\nTransformer models\nAttention is all you need\nNatural Language Processing\nscGPT\nsingle cell RNAseq\n\n\n\nDiffusion models\n\n\nRF-diffusion\n\n\n\n\nVariational Autoencoders\n\n\n\n\n\n\n\nConditional Variational Autoencoders\n\n\nscARCHES, scPOLI\nsingle cell RNAseq"
-  },
-  {
-    "objectID": "posts/2023-07-15-gzip-classifier/gzip-classifer.html#method",
-    "href": "posts/2023-07-15-gzip-classifier/gzip-classifer.html#method",
-    "title": "Gzip is all you need? - Cell type annotation with a meme algorithm",
-    "section": "Method",
-    "text": "Method\n\nIn this post, I will implement the algorithm for single cell omics data and test it on a cell type classification task."
-  },
-  {
-    "objectID": "posts/2023-07-19-github-workflows/github-workflows-latex.html",
-    "href": "posts/2023-07-19-github-workflows/github-workflows-latex.html",
-    "title": "Compile LaTex with github actions",
-    "section": "",
-    "text": "I love LaTex. Although it was shown that writers using LaTex are both less productive AND make more mistakes (Knauff 2014), it is still so much more fun to code a LaTex document than writing in a dull Word Document. In addition, LaTex is extremely lightweight and never crashes, even when writing long documents with many high-quality figures that bring my laptops’s memory to the limit when using Word. - especially while writing on important thesis projects, I appreciate everything that is not an additional stress factor.\nI’d like to share a few tricks that helped me to\nI recently started to use github.com as my default cloud storage for my LaTex documents. Other than being a great storage/cloud backup for my documents, this has also the great advantage of being highly trackable.\n\n\n\n\nReferences\n\nKnauff, Jelica, Markus AND Nejasmic. 2014. “An Efficiency Comparison of Document Preparation Systems Used in Academic Research and Development.” PLOS ONE 9 (12): 1–12. https://doi.org/10.1371/journal.pone.0115069."
-  },
-  {
-    "objectID": "work.html#social",
-    "href": "work.html#social",
-    "title": "Work",
-    "section": "Social",
-    "text": "Social\n2023  Member/Organizer German American Conference  Functional team social events\n2022 - today  IT-Team Student Body Chemistry/Biochemistry, Heidelberg  Member - Maintenance of website and IT infrastructure, email communication.\n2020-2021  Treasurer Student Body Biochemistry, Tuebingen  Treasurer of for the student body, an organization with 300 members.\n2021  STEM representative - University of Tuebingen  Representing the subject biochemistry at local high schools to motivate young talents for a career in STEM."
-  },
-  {
-    "objectID": "work.html#publications",
-    "href": "work.html#publications",
-    "title": "Work",
-    "section": "Publications",
-    "text": "Publications\nEnergetics and kinetics of membrane permeation of photoresists for bioprinting Lucas Diedrich, Matthias Brosz, Tobias Abele, Salome Steinke, Frauke Gräter, Kerstin Göpfrich, Camilo Aponte-Santamaría bioRxiv 2023.03.27.534360; doi: https://doi.org/10.1101/2023.03.27.534360"
-  },
-  {
-    "objectID": "work.html#software-packages",
-    "href": "work.html#software-packages",
-    "title": "Work",
-    "section": "Software packages",
-    "text": "Software packages\nipathapy Python | github A python package to create metabolic path maps with ipath3"
-  },
-  {
     "objectID": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html",
     "href": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html",
     "title": "Your birthday might kill you!",
@@ -147,11 +35,11 @@
     "text": "Modeling\nDon’t believe me? Let’s start with a simulation.\n\nPrior assumptions\nIn order to facilitate the computations, I will first create a simplified model world with the following assumptions/simplifications:\n\nFor every day in your life, it is equally likely for you to die.\n\n\nThis assumption is clearly not fully accurate. For example, infants or people above age 50 have a significantly higher chance of death than people in their twenties (see the official actuarial life table of the US social security office). A more appropriate yet significantly more complex model might assume that the likelihood to die steadily increases with age (e.g. Weibull distribution). However, it is probably relatively safe to assume that the likelihood to die is more or less smooth and changing slowly, i.e. we would not expect any sudden changes in the likelihood of death within an age cohort. As we will essentially compare the likelihood of death per day within the same year (i.e. the same age cohort), our model is probably still giving reasonable results. We also dismiss any seasonal changes (e.g. heat deaths in the summer or infections in the winter) that might affect the results.\n\n\nPlanet MB-15640423\n\n\nIn order to make the observed trends more significant, I will also assume for now that we observe life on a planet with very short year of only 10 days. However, the observed trends will also hold true any other length of the year, but might not be as obvious to see/would require significantly more sampling. To further simplify the computations, we also assume that our planet does not have any leap years.\n\n\n\nThe model\nBased on these assumptions, we can create a simple simulation: We first define a function life that simulates the life of a single individual: For every day, the individual either survives or dies with a constant probability (here: \\(p_{death}=0.05\\)). For every individual, the function life runs until it reaches the day of death of the individual and then returns the number of days that the person survived (days_lived). We repeat that for a few thousand simulations (individuals) to get an estimation of the distribution. To estimate the variability of our simulation, we rerun this simulation 5 times.\nWe can figure out whether the individual died on their birthday or not by using the remainder (modulo operation) of the division \\(\\frac{\\text{days lived}}{k}\\). E.g. if a person died on their birtday, they survived 0, 10, 20, 30, 40… days in our model world. Thus, when dividing by the length of the year \\(k\\), the remainder will always be zero (Mathematically speaking: \\(y\\times k \\equiv 0 \\:\\text{mod}\\:k\\) for \\(y \\in \\mathbb{N}^0\\)). If a person dies one day after their birthday, the fraction \\(\\frac{\\text{days lived}}{k}\\) will have the remainder 1 and so on…\nImplementing this model in python (see hidden code cells) and plotting the results looks like this:\n\n\nCode\n# Import modules\nimport numpy as np \nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom scipy.stats import t\n\n\n# Parameters\ncolor='#45B39D' \nplot_params = dict(\n    marker='o', \n    linestyle='', \n    markeredgecolor='k'\n)\n\nn_individuals = 10000\nlength_of_year = 10\nprobability_of_death = 0.05\nalpha_level = 0.05\n\nn_replicates = 5\n\n\n\n\nCode\n# Define functions \ndef life(probability_of_death: float = 0.05):\n    \"\"\" Simulate length of a life given a constant \n    probability of death every day \"\"\" \n    \n    days_lived = 0\n    while np.random.random() &gt; probability_of_death: \n        days_lived += 1\n    return days_lived \n\n\ndef run_model(probability_of_death: float = 0.05, \n              length_of_year: int = 365, \n              n_individuals: int = 10000\n              ): \n    \"\"\" Run model for a population of n_individuals and return probabilities to  \n    die on day x of life\"\"\"\n\n    # Simulate n_individuals lives \n    days_lived = [life(probability_of_death) for _ in range(n_individuals)]\n\n    # Get day of year (0-birthday, 1-day after birthday ...)\n    day_of_year = [dl % length_of_year for dl in days_lived]\n\n    # Count deaths per day of year\n    days, counts = np.unique(day_of_year, return_counts=True)\n\n    # Return normalized values (probabilities)\n    return pd.Series(counts/np.sum(counts), index=days)\n\n\n\n\nCode\n# Run model multiple times to get estimate of uncertainty\nnp.random.default_rng(seed=15640423)\n\nreplicates = list()\n\nfor _ in range(n_replicates): \n    results = run_model(probability_of_death=probability_of_death, \n                        length_of_year=length_of_year, \n                        n_individuals=n_individuals\n                        )\n    replicates.append(results)\n\n# Deal with missing values \nreplicates = (pd.concat(replicates, axis=1)\n             .reindex(range(length_of_year))\n             .fillna(0)\n             )\n\n# Compute mean and confidence interval \nmean = replicates.mean(axis=1)\nci = t.ppf(1-alpha_level/2, n_replicates)*replicates.std(axis=1)/np.sqrt(n_replicates)\n\n\n\n\nCode\n# Plot \nfig, ax = plt.subplots(1,1, figsize=(7,4))\n\nax.fill_between(range(length_of_year), mean-ci, mean+ci, \n                alpha=0.2, \n                color=color, \n                label=f'{(1-alpha_level)*100:.0f}% Confidence Interval n={n_replicates}'\n                )\n\nax.plot(range(length_of_year), mean, \n        color=color, \n        **plot_params, \n        label='Simulated probability of death'\n        )\n\nax.legend(loc='upper right')\n\nax.axhline(1/length_of_year, 0, 1, \n           color='#cccccc', \n           label='Expected by equal chance'\n           )\n\nax.set_ylabel('Probability of death')\nax.set_xlabel(f'Day relative to birthday in {length_of_year}-day year')\n\nax.annotate('Birthday', xy=(0, mean[0]), xytext=(20,0),\n            xycoords='data', \n            textcoords='offset points', \n            va='center', \n            ha='left', \n            fontsize=12,\n            arrowprops=dict(width=1.5, headwidth=0)\n            )\n\nax.set_ylim(0,0.15)\n\nplt.show()\n\n\n\n\n\nObserved number of deaths at a day X after birthday divided by the total number of individuals. The fill indicates the confidence interval of the mean from 5 replications of the simulations. The gray line indicates a null model in which the likelihood to die is independent of relation to your birthday.\n\n\n\n\nWhat we see is that in our simulation/toy example, it is almost 30% more likely for an individual to die on their birthday than we would expect, if there were no relation to our birthday (gray line). Furthermore, the likelihood to die on day 1, 2, 3, … after a birthday steadily decreases. But why?"
   },
   {
-    "objectID": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html#footnotes",
-    "href": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html#footnotes",
+    "objectID": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html#intuition",
+    "href": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html#intuition",
     "title": "Your birthday might kill you!",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nAnd maybe also somewhat fitting for a person who almost exclusively wrote about tragedy and death↩︎\nOne might tend to call them life↩︎"
+    "section": "Intuition",
+    "text": "Intuition\nThe underlying concept is straightforward. On our birthday, we inevitably face an equal or greater likelihood of mortality compared to any other day. To elaborate, consider a scenario in which we analyze the lives of a whole population of individuals, as we did in our simulation. While most individuals would survive their actual birth date, regrettably, there exists a nonzero probability that someone might pass away precisely on that day, thereby decreasing the total population. Consequently, when the probability of death remains constant, fewer individuals, on average, will add to the count of deaths on the day following their birthday, and so forth. As the birthday will always be the first day in every new year, there will always more individuals have the chance to die at their birthday than any other day. This leads to the fact that sumed over the full population, more deaths will occur on birthdays than any other day."
   },
   {
     "objectID": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html#quick-maths",
@@ -161,13 +49,6 @@
     "text": "Quick maths\nWe can also derive an analytical solution for this problem. Given the probability \\(x\\) to die on a certain day, the probability of survival said day can be written as counter-probability:\n\\[\\begin{equation}\n    P(X: \\text{survival on one day}) = 1 - x\n\\end{equation}\\]\nAssuming independence of events, the probability to die on the \\(n\\)th day of your life will be the product of probabilities to survive for \\(n-1\\) days times the probability to die on day \\(n\\):\n\\[\\begin{equation}\n    P(Y: \\text{death on day n}) = (1 - x)^{n-1}\\cdot x\n\\end{equation}\\]\nCorresponding to an exponential decay. Now we know the probability to die on any day and can derive a formula to die on a birthday: For every year 0, 1 … \\(\\infty\\), we will just add up the probability to die on the day corresponding to your birthday. So we need to add up the probabilities to die on day 0, day \\(1\\, \\text{year} \\times k\\), day \\(2\\,\\text{years} \\times k\\), day \\(3\\,\\text{years} \\times k\\), …\n\nThis leads to the formula\n\\[\\begin{equation}\n    P(\\text{death on birthday}) = \\sum_{y=0}^{\\infty}{(1 - x)^{(k\\times y-1)}\\cdot x}\n\\end{equation}\\]\nGeneralizing this to any day \\(0\\leq d \\leq k-1\\) after ones birthday in the year:\n\\[\\begin{equation}\n    P(d) = \\sum_{y=0}^{\\infty}{(1 - x)^{(k\\times y+d-1)}\\cdot x}\n\\end{equation}\\]\nWhere \\(x\\) being the probability to die per day, \\(k\\in \\mathbb{N}\\) the length of the year, \\(y=0, 1, ...\\) the year after birth, and \\(d=0, 1, ..., k-1\\) the day after birthday (with \\(d=0\\) being the birthday and \\(k-1\\) the day before the birthday).\nTaking constant terms out of the sum:\n\\[\\begin{equation}\n    P(d) = x\\cdot (1-x)^{d-1}\\cdot \\sum_{y=0}^{\\infty}{(1 - x)^{k\\times y}}\n\\end{equation}\\]\nAnd using the definition of the geometric series for \\((1-x)^k&lt;1\\):\n\\[\\begin{equation}\n    P(d) =  \\frac{x}{1-(1-x)^{k}} \\cdot (1-x)^{d-1}\n\\end{equation}\\]\nPlotting the analytical solution together with our simulated values provides a pretty decent agreement:\n\n\n\nCode\ndef model(probability_of_death: float, length_of_year: int = 365): \n    \"\"\"Implementation of our analytical model, assuming a constant probability of death \"\"\"\n\n        \n    day_after_bday = np.arange(0, length_of_year, 1)\n\n    pdeath = probability_of_death/(1-(1-probability_of_death)**length_of_year)*np.power(1-probability_of_death, day_after_bday)\n\n    return day_after_bday, pdeath \n\n\n\n\nday_after_bday, pdeath = model(probability_of_death, length_of_year) \n\n# Plotting              \nfig, ax = plt.subplots(1,1, figsize=(7,5))\n\n# Confidence interval\nax.fill_between(range(length_of_year), mean-ci, mean+ci, \n                alpha=0.2, \n                color=color, \n                label=f'{(1-alpha_level)*100:.0f}% Confidence Interval n={n_replicates}'\n                )\n# Simulation\nax.plot(range(length_of_year), mean, \n        color=color, \n        **plot_params, \n        label='Simulation'\n        )\n# Model \nax.plot(day_after_bday, pdeath, \n        marker='', linestyle='-', linewidth=3, color='#555555', label='Our model')\n\nax.set_ylabel('P(X)')\nax.set_xlabel(f'Day after birthday ({length_of_year} day year)')\nax.set_ylim(0,0.15)\nax.legend(loc='upper right')\nplt.show()\n\n\n\n\n\nOverlay of our analytical solution and the simulation.\n\n\n\n\nThis confirms that the likeliest time for someone to die is any of their birthdays."
   },
   {
-    "objectID": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html#explanation",
-    "href": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html#explanation",
-    "title": "Your birthday might kill you!",
-    "section": "Explanation",
-    "text": "Explanation"
-  },
-  {
     "objectID": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html#the-real-world",
     "href": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html#the-real-world",
     "title": "Your birthday might kill you!",
@@ -175,17 +56,52 @@
     "text": "The real world\nSo we have a simulation, an analytical model for our observations and further an intuitive explanation for this phenomenom. However, all of this still happened in our model world MB-15640423. Are these preditcions actually relevant in real life?\nNo, they are not! Even if we take our extremely simplified model and plug in more or less realistic numbers (using the above mentioned population statistcs), we see that there is almost no difference (relative change) between the likelihoods to die on our birthday or even the most extreme opposite (the day before our birthday).\n\n\nCode\nday_after_bday, pdeath = model(0.001/365, 365)\n\n\nfig, ax = plt.subplots(1,1)\n\nax.plot(day_after_bday, pdeath, \n        marker='', linestyle='-', linewidth=3, color='#555555', label='Our model')\n\nax.annotate(text=f'Relative change {(1-pdeath[0]/pdeath[-1])*100:.2g} %', xy=(0.5,0.6), xytext=(0,0), xycoords='axes fraction', textcoords='offset points', ha='center', va='center')\n\nax.set_ylabel('P(X)')\nax.set_ylim(pdeath.min()*0.9,pdeath.max()*1.1)\nax.set_xlabel(f'Day after birthday (365 day year)')\nax.legend(loc='upper right')\nplt.show()\n\n\n\n\n\nAlthough the statistical impact of this phenomenon is small, regrettably, there exists a genuine real-world occurrence known as the Birthday Effect, which suggests that individuals are more prone to passing away around the time of their birthdays than at other times. Yet, this correlation is rooted less in peculiar mathematics and more in tangible life factors, as the time around our birthdays is also associated with increased probabilities of alcohol and drug misuse, depressive periods, and other adversities that would be more fitting within the pages of a Shakespearean tale."
   },
   {
-    "objectID": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html#intuition",
-    "href": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html#intuition",
-    "title": "Your birthday might kill you!",
-    "section": "Intuition",
-    "text": "Intuition\nThe underlying concept is straightforward. On our birthday, we inevitably face an equal or greater likelihood of mortality compared to any other day. To elaborate, consider a scenario in which we analyze the lives of a whole population of individuals, as we did in our simulation. While most individuals would survive their actual birth date, regrettably, there exists a nonzero probability that someone might pass away precisely on that day, thereby decreasing the total population. Consequently, when the probability of death remains constant, fewer individuals, on average, will add to the count of deaths on the day following their birthday, and so forth. As the birthday will always be the first day in every new year, there will always more individuals have the chance to die at their birthday than any other day. This leads to the fact that sumed over the full population, more deaths will occur on birthdays than any other day."
-  },
-  {
     "objectID": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html#conclusion",
     "href": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html#conclusion",
     "title": "Your birthday might kill you!",
     "section": "Conclusion",
     "text": "Conclusion\nIn this post we have looked at the somewhat surprising phenomenom that under some simplifying assumptions, our birthday will also be our most likely day of death. However, in the real world, this effect is negible, even when ignoring the many interferring factors that might lead to very different results.\n\nStill, the general workflow behind this blog post might be transferable to other scientific endaveours and especially computationally approaches: First, we observed an interesting phenomenom. We then started to build up an intuition for the problem by creating a model world/simulation, in which we tried to clearly articulate the underlying assumptions of our model. And finally, when we felt more comfortable with our intuition, we put in the effort and derived a more theoretically grounded model and intuitive explanation.\nI hope that you learned a few things and that I could contribute to your collection of spurious knowledge. See you next time, and in the meantime, stay safe!"
+  },
+  {
+    "objectID": "work.html",
+    "href": "work.html",
+    "title": "Work",
+    "section": "",
+    "text": "My goal is to contribute to the understanding of the driving biological mechanisms of diseases in order to develop new cures, with a special fascination for our immune system. I am particuarly interested in combining existing public resources, mechanistic understanding of diseases and high throughput/omics data using computational methods to a more complete picture of the underlying causes."
+  },
+  {
+    "objectID": "work.html#relevant-experience",
+    "href": "work.html#relevant-experience",
+    "title": "Work",
+    "section": "Relevant experience",
+    "text": "Relevant experience\nMay 2023 - today  Shalek Lab Broad Institute | Ragon Institute of Harvard, MIT and MGH | IMES/MIT | Boston  Metaanalysis of recurrent T cell states in health and disease\nSeptember 2022 - December 2023  Alexandrov Lab EMBL Heidelberg | Heidelberg  Integrating immunocytochemistry with single cell metabolomics in primary human CD4+ T cells for drug screening. Experimental work, data analysis and computational work.\nFebruary 2022 - March 2023  Graeter Lab Heidelberg Institute for Theoretical Studies | Heidelberg  Evaluation of the membrane permeability of small molecules with molecular dynamics simulations. Establishing a computational pipeline for data analysis. (Preprint)\nMay 2022 - July 2023  Russell Lab Bioquant | Heidelberg  Computational biology. Evaluating the pathogenicity of missense variants in protein domains using public resources.\nMarch 2022 - October 2023  Hartmann Group Max Planck Institute for Biology | Tuebingen  Establishing a biophysical assay for the screening of natural and artificial ligands of the E3 ligase Cereblon."
+  },
+  {
+    "objectID": "work.html#education",
+    "href": "work.html#education",
+    "title": "Work",
+    "section": "Education",
+    "text": "Education\n2021 - today  Biochemistry M.Sc. Ruprecht-Karls-University Heidelberg | Heidelberg  Computational biology, biophysics, drug discovery\n2018 - 2021  Biochemistry B.Sc. Eberhard Karls University Tuebingen | Tuebingen"
+  },
+  {
+    "objectID": "work.html#social",
+    "href": "work.html#social",
+    "title": "Work",
+    "section": "Social",
+    "text": "Social\n2023  Member/Organizer German American Conference  Functional team social events\n2022 - today  IT-Team Student Body Chemistry/Biochemistry, Heidelberg  Member - Maintenance of website and IT infrastructure, email communication.\n2020-2021  Treasurer Student Body Biochemistry, Tuebingen  Treasurer of for the student body, an organization with 300 members.\n2021  STEM representative - University of Tuebingen  Representing the subject biochemistry at local high schools to motivate young talents for a career in STEM."
+  },
+  {
+    "objectID": "work.html#software-packages",
+    "href": "work.html#software-packages",
+    "title": "Work",
+    "section": "Software packages",
+    "text": "Software packages\nipathapy Python | github A python package to create metabolic path maps with ipath3"
+  },
+  {
+    "objectID": "work.html#scholarships",
+    "href": "work.html#scholarships",
+    "title": "Work",
+    "section": "Scholarships",
+    "text": "Scholarships\nDecember 2020 - today  German Scholarship Foundation\nMarch 2020 - December 2020  Deutschlandstipendium"
   }
 ]
