@@ -3,5 +3,5 @@ title: "Hello-world"
 date: 2023-07-14
 ---
 
-My first blog post! So exciting!
+My first blog post! How exciting!
 
