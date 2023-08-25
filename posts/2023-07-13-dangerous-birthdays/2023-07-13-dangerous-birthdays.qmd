@@ -3,8 +3,10 @@ title: "Your birthday might kill you!"
 date: 2023-07-14
 ---
 
-I recently attended a very enjoyable open-air performance of Shakespear's *Macbeth*. Given my limited knowledge about the piece and English literature in general, I did the thing that most of the peers in my generation would do and I read the [Wikipedia page on William Shakespeare](https://en.wikipedia.org/wiki/William_Shakespeare) in advance. Unfortunately, I did not get past the first paragraph as it immediately caught my eye that Shakespeare **died on his birthday**. Very tragic!
+I recently attended a very enjoyable open-air performance of Shakespear's *Macbeth*. Given my limited knowledge about the piece and English literature in general, I did the thing that most of the peers in my generation would do and I did a google search on William Shakespeare in advance. Unfortunately, I did not get far as it immediately caught my eye that Shakespeare potentially **died on his birthday**.[^1] How tragic!
 
+
+[^1]: It should be noted that there is an ongoing debate about his alleged birthday (April 23) and he may have been born on a different day in late April. 
 <!-- [^1]: And maybe also somewhat fitting for a person who almost exclusively wrote about tragedy and death -->
 
 
