@@ -3,19 +3,20 @@ title: "Your birthday might kill you!"
 date: 2023-07-14
 ---
 
-::: {.callout-warning}
-Note that this post mentions sensitive topics such as death.
-While it focuses only on some mathematical features which happen
-to have a perculiar connection to death, this might be upsetting to some individuals. Please keep that in mind before you
-continue reading.
-:::
-
 I recently attended a very enjoyable open-air performance of Shakespear's *Macbeth*. Given my limited knowledge about the piece and English literature in general, I did the thing that most of the peers in my generation would do and I read the [Wikipedia page on William Shakespeare](https://en.wikipedia.org/wiki/William_Shakespeare) in advance. Unfortunately, I did not get past the first paragraph as it immediately caught my eye that Shakespeare **died on his birthday**. Very tragic!
 
 <!-- [^1]: And maybe also somewhat fitting for a person who almost exclusively wrote about tragedy and death -->
 
 
 But is it though? After thinking about it for a while, I came to the (for me) surprising conclusion that we might be statistically prone to die on our birthday... In this post, I will share with you my finding that in a model world, the most probable day for you to die will be your birthday. 
+
+
+::: {.callout-warning}
+Note that this post mentions sensitive topics such as death.
+While it focuses only on some mathematical features which happen
+to have a perculiar connection to death, this might be upsetting to some individuals. Please keep that in mind before you
+continue reading.
+:::
 
 
 ## Modeling 
@@ -299,7 +300,7 @@ ax.annotate(text=f'Relative change {(1-pdeath[0]/pdeath[-1])*100:.2g} %', xy=(0.
 
 ax.set_ylabel('P(X)')
 ax.set_ylim(pdeath.min()*0.9,pdeath.max()*1.1)
-ax.set_xlabel(f'Day after birthday ({length_of_year} day year)')
+ax.set_xlabel(f'Day after birthday (365 day year)')
 ax.legend(loc='upper right')
 plt.show()
 

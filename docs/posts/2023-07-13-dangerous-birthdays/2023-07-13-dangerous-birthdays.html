@@ -131,8 +131,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
+            <div class="quarto-navbar-tools ms-auto tools-wide">
     <a href="https://twitter.com/lucas__1406/" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/lucas-diedrich" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
     <a href="https://github.com/lucas-diedrich" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
 </div>
           </div> <!-- /navcollapse -->
@@ -186,6 +187,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
+<p>I recently attended a very enjoyable open-air performance of Shakespear’s <em>Macbeth</em>. Given my limited knowledge about the piece and English literature in general, I did the thing that most of the peers in my generation would do and I read the <a href="https://en.wikipedia.org/wiki/William_Shakespeare">Wikipedia page on William Shakespeare</a> in advance. Unfortunately, I did not get past the first paragraph as it immediately caught my eye that Shakespeare <strong>died on his birthday</strong>. Very tragic!</p>
+<!-- [^1]: And maybe also somewhat fitting for a person who almost exclusively wrote about tragedy and death -->
+<p>But is it though? After thinking about it for a while, I came to the (for me) surprising conclusion that we might be statistically prone to die on our birthday… In this post, I will share with you my finding that in a model world, the most probable day for you to die will be your birthday.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -199,20 +203,17 @@ Warning
 <p>Note that this post mentions sensitive topics such as death. While it focuses only on some mathematical features which happen to have a perculiar connection to death, this might be upsetting to some individuals. Please keep that in mind before you continue reading.</p>
 </div>
 </div>
-<p>I recently attended a very enjoyable open-air performance of Shakespear’s <em>Macbeth</em>. Given my limited knowledge about the piece and English literature in general, I did the thing that most of the peers in my generation would do and I read the <a href="https://en.wikipedia.org/wiki/William_Shakespeare">Wikipedia page on William Shakespeare</a> in advance. Unfortunately, I did not get past the first paragraph as it immediately caught my eye that Shakespeare <strong>died on his birthday</strong>. Very tragic!</p>
-<!-- [^1]: And maybe also somewhat fitting for a person who almost exclusively wrote about tragedy and death -->
-<p>But is it though? After thinking about it for a while, I came to the (for me) surprising conclusion that we might be statistically prone to die on our birthday… In this post, I will share with you my finding that in a model world, the most probable day for you to die will be your birthday.</p>
 <section id="modeling" class="level2">
 <h2 class="anchored" data-anchor-id="modeling">Modeling</h2>
 <p>Don’t believe me? Let’s start with a simulation.</p>
 <section id="prior-assumptions" class="level3">
 <h3 class="anchored" data-anchor-id="prior-assumptions">Prior assumptions</h3>
-<p>In order to facilitate the computations, I will first create a model simplified model world with the following assumptions/simplifications:</p>
+<p>In order to facilitate the computations, I will first create a simplified model world with the following assumptions/simplifications:</p>
 <ol type="1">
 <li>For every day in your life, it is equally likely for you to die.</li>
 </ol>
 <blockquote class="blockquote">
-<p>This assumption is clearly not fully accurate. For example, infants or people above age 50 have a significantly higher chance of death than people in their twenties (see the official <a href="https://www.ssa.gov/oact/STATS/table4c6.html">actuarial life table</a> of the US social security office). However, it is probably relatively safe to assume that the likelihood to die is more or less <strong>smooth</strong> and <strong>changing slowly</strong>, i.e.&nbsp;we would not expect any sudden changes in the likelihood of death within an age cohort. As we will essentially compare the likelihood of death per day within the same year (i.e.&nbsp;the same age cohort), our model is probably still giving reasonable results. We also dismiss any seasonal changes (e.g.&nbsp;heat deaths in the summer or infections in the winter) that might affect the results.</p>
+<p>This assumption is clearly not fully accurate. For example, infants or people above age 50 have a significantly higher chance of death than people in their twenties (see the official <a href="https://www.ssa.gov/oact/STATS/table4c6.html">actuarial life table</a> of the US social security office). A more appropriate yet significantly more complex model might assume that the likelihood to die steadily increases with age (e.g.&nbsp;<a href="https://en.wikipedia.org/wiki/Weibull_distribution">Weibull distribution</a>). However, it is probably relatively safe to assume that the likelihood to die is more or less <strong>smooth</strong> and <strong>changing slowly</strong>, i.e.&nbsp;we would not expect any sudden changes in the likelihood of death within an age cohort. As we will essentially compare the likelihood of death per day within the same year (i.e.&nbsp;the same age cohort), our model is probably still giving reasonable results. We also dismiss any seasonal changes (e.g.&nbsp;heat deaths in the summer or infections in the winter) that might affect the results.</p>
 </blockquote>
 <ol start="2" type="1">
 <li>Planet MB-15640423</li>
@@ -473,7 +474,7 @@ Warning
 <span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">'P(X)'</span>)</span>
 <span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>ax.set_ylim(pdeath.<span class="bu">min</span>()<span class="op">*</span><span class="fl">0.9</span>,pdeath.<span class="bu">max</span>()<span class="op">*</span><span class="fl">1.1</span>)</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="ss">f'Day after birthday (</span><span class="sc">{</span>length_of_year<span class="sc">}</span><span class="ss"> day year)'</span>)</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="ss">f'Day after birthday (365 day year)'</span>)</span>
 <span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>ax.legend(loc<span class="op">=</span><span class="st">'upper right'</span>)</span>
 <span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
@@ -481,14 +482,14 @@ Warning
 <p><img src="2023-07-13-dangerous-birthdays_files/figure-html/cell-7-output-1.png" width="614" height="429"></p>
 </div>
 </div>
-<p>Although the statistical impact of this phenomenon is small, regrettably, there exists a genuine real-world occurrence known as the Birthday Effect, which suggests that individuals are more prone to passing away around the time of their birthdays than at other times. Yet, this correlation is rooted less in peculiar mathematics and more in tangible life factors, encompassing probabilities of alcohol and drug misuse, periods of despondency, and other adversities that would be more fitting within the pages of a Shakespearean tale.</p>
+<p>Although the statistical impact of this phenomenon is small, regrettably, there exists a genuine real-world occurrence known as the <a href="https://en.wikipedia.org/wiki/Birthday_effect">Birthday Effect</a>, which suggests that individuals are more prone to passing away around the time of their birthdays than at other times. Yet, this correlation is rooted less in peculiar mathematics and more in tangible life factors, as the time around our birthdays is also associated with increased probabilities of alcohol and drug misuse, depressive periods, and other adversities that would be more fitting within the pages of a Shakespearean tale.</p>
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
 <p>In this post we have looked at the somewhat surprising phenomenom that under some simplifying assumptions, our birthday will also be our most likely day of death. However, in the real world, this effect is negible, even when ignoring the many interferring factors that might lead to very different results.</p>
 <!-- [^2]: One might tend to call them *life* -->
 <p>Still, the general workflow behind this blog post might be transferable to other scientific endaveours and especially computationally approaches: First, we observed an interesting phenomenom. We then started to build up an intuition for the problem by creating a model world/simulation, in which we tried to clearly articulate the underlying assumptions of our model. And finally, when we felt more comfortable with our intuition, we put in the effort and derived a more theoretically grounded model and intuitive explanation.</p>
-<p>I hope that you learned a few things and that I could contribute to your collection of spurious knowledge. See you next time and in the meantime stay safe!</p>
+<p>I hope that you learned a few things and that I could contribute to your collection of spurious knowledge. See you next time, and in the meantime, stay safe!</p>
 
 
 </section>
