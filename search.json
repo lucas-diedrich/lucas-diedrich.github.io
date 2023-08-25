@@ -1,24 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "About",
-    "section": "",
-    "text": "Hi, nice to meet you! I’m Lucas.\nI am a M.Sc. student of biochemistry at Heidelberg University, currently working as a visiting student at the Shalek Lab in Boston. My interests lay in using computational approaches to better understand cellular biology in the context of diseases and cellular dysfunction (see also Work). I am especially fascinated by integrating omics technologies with prior biological knowledge."
-  },
-  {
     "objectID": "posts/index.html",
     "href": "posts/index.html",
     "title": "lucas-diedrich.github.io",
     "section": "",
-    "text": "Hello-world\n\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2023\n\n\n\n\n\n\n  \n\n\n\n\nYour birthday might kill you!\n\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2023\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/2023-07-13-hello-world/hello-world.html",
-    "href": "posts/2023-07-13-hello-world/hello-world.html",
-    "title": "Hello-world",
-    "section": "",
-    "text": "My first blog post! So exciting!"
+    "text": "Your birthday might kill you!\n\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2023\n\n\n\n\n\n\n  \n\n\n\n\nHello-world\n\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html",
@@ -61,6 +47,20 @@
     "title": "Your birthday might kill you!",
     "section": "Conclusion",
     "text": "Conclusion\nIn this post we have looked at the somewhat surprising phenomenom that under some simplifying assumptions, our birthday will also be our most likely day of death. However, in the real world, this effect is negible, even when ignoring the many interferring factors that might lead to very different results.\n\nStill, the general workflow behind this blog post might be transferable to other scientific endaveours and especially computationally approaches: First, we observed an interesting phenomenom. We then started to build up an intuition for the problem by creating a model world/simulation, in which we tried to clearly articulate the underlying assumptions of our model. And finally, when we felt more comfortable with our intuition, we put in the effort and derived a more theoretically grounded model and intuitive explanation.\nI hope that you learned a few things and that I could contribute to your collection of spurious knowledge. See you next time, and in the meantime, stay safe!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About",
+    "section": "",
+    "text": "Hi, nice to meet you! I’m Lucas.\nI am a M.Sc. student of biochemistry at Heidelberg University, currently working as a visiting student at the Shalek Lab in Boston. My interests lay in using computational approaches to better understand cellular biology in the context of diseases and cellular dysfunction (see also Work). I am especially fascinated by integrating omics technologies with prior biological knowledge."
+  },
+  {
+    "objectID": "posts/2023-07-13-hello-world/hello-world.html",
+    "href": "posts/2023-07-13-hello-world/hello-world.html",
+    "title": "Hello-world",
+    "section": "",
+    "text": "My first blog post! So exciting!"
   },
   {
     "objectID": "work.html",
