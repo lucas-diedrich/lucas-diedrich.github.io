@@ -1,5 +1,18 @@
 ---
 title: "About"
+about: 
+    template: jolla 
+    image: img/profile-img.jpg
+    links: 
+        - icon: twitter
+          text: twitter
+          href: https://twitter.com/lucas__1406
+        - icon: linkedin
+          text: LinkedIn
+          href: https://www.linkedin.com/in/lucas-diedrich
+        - icon: github
+          text: GitHub
+          href: https://github.com/lucas-diedrich
 ---
 
 Hi, nice to meet you! I'm Lucas. 
