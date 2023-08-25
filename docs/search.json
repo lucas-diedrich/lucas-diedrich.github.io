@@ -18,14 +18,14 @@
     "href": "posts/2023-07-13-hello-world/hello-world.html",
     "title": "Hello-world",
     "section": "",
-    "text": "My first blog post! So exciting!"
+    "text": "My first blog post! How exciting!"
   },
   {
     "objectID": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html",
     "href": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html",
     "title": "Your birthday might kill you!",
     "section": "",
-    "text": "I recently attended a very enjoyable open-air performance of Shakespear’s Macbeth. Given my limited knowledge about the piece and English literature in general, I did the thing that most of the peers in my generation would do and I read the Wikipedia page on William Shakespeare in advance. Unfortunately, I did not get past the first paragraph as it immediately caught my eye that Shakespeare died on his birthday. Very tragic!\nBut is it though? After thinking about it for a while, I came to the (for me) surprising conclusion that we might be statistically prone to die on our birthday… In this post, I will share with you my finding that in a model world, the most probable day for you to die will be your birthday."
+    "text": "I recently attended a very enjoyable open-air performance of Shakespear’s Macbeth. Given my limited knowledge about the piece and English literature in general, I did the thing that most of the peers in my generation would do and I did a google search on William Shakespeare in advance. Unfortunately, I did not get far as it immediately caught my eye that Shakespeare potentially died on his birthday.1 How tragic!\nBut is it though? After thinking about it for a while, I came to the (for me) surprising conclusion that we might be statistically prone to die on our birthday… In this post, I will share with you my finding that in a model world, the most probable day for you to die will be your birthday."
   },
   {
     "objectID": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html#modeling",
@@ -60,7 +60,7 @@
     "href": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html#conclusion",
     "title": "Your birthday might kill you!",
     "section": "Conclusion",
-    "text": "Conclusion\nIn this post we have looked at the somewhat surprising phenomenom that under some simplifying assumptions, our birthday will also be our most likely day of death. However, in the real world, this effect is negible, even when ignoring the many interferring factors that might lead to very different results.\n\nStill, the general workflow behind this blog post might be transferable to other scientific endaveours and especially computationally approaches: First, we observed an interesting phenomenom. We then started to build up an intuition for the problem by creating a model world/simulation, in which we tried to clearly articulate the underlying assumptions of our model. And finally, when we felt more comfortable with our intuition, we put in the effort and derived a more theoretically grounded model and intuitive explanation.\nI hope that you learned a few things and that I could contribute to your collection of spurious knowledge. See you next time, and in the meantime, stay safe!"
+    "text": "Conclusion\nIn this post we have looked at the somewhat surprising phenomenom that under some simplifying assumptions, our birthday will also be our most likely day of death. However, in the real world, this effect is negible, even when ignoring the many interferring factors that might lead to very different results.\n\nStill, the general workflow behind this blog post might be transferable to other scientific endaveours and especially computational approaches: First, we observed an interesting phenomenom. We then started to build up an intuition for the problem by creating a model world/simulation, in which we tried to clearly articulate the underlying assumptions of our model. And finally, when we felt more comfortable with our intuition, we put in the effort and derived a more theoretically grounded model and intuitive explanation.\nI hope that you learned a few things and that I could contribute to your collection of spurious knowledge. See you next time, and in the meantime, stay safe!"
   },
   {
     "objectID": "work.html",
@@ -103,5 +103,26 @@
     "title": "Work",
     "section": "Scholarships",
     "text": "Scholarships\nDecember 2020 - today  German Scholarship Foundation\nMarch 2020 - December 2020  Deutschlandstipendium"
+  },
+  {
+    "objectID": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html#footnotes",
+    "href": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html#footnotes",
+    "title": "Your birthday might kill you!",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nIt should be noted that there is an ongoing debate about his alleged birthday (April 23) and he may have been born on a different day in late April. ↩︎"
+  },
+  {
+    "objectID": "work.html#software",
+    "href": "work.html#software",
+    "title": "Work",
+    "section": "Software",
+    "text": "Software\n\nLanguages\nipathapy Python | github A python package to create metabolic path maps with ipath3"
+  },
+  {
+    "objectID": "work.html#rewards-scholarships",
+    "href": "work.html#rewards-scholarships",
+    "title": "Work",
+    "section": "Rewards + Scholarships",
+    "text": "Rewards + Scholarships\nDecember 2020 - today  German Scholarship Foundation\nMarch 2020 - December 2020  Deutschlandstipendium"
   }
 ]
