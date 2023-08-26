@@ -60,7 +60,7 @@
     "href": "index.html",
     "title": "About",
     "section": "",
-    "text": "Hi, nice to meet you! I’m Lucas.\nI am a M.Sc. student of biochemistry at Heidelberg University, currently working as a visiting student at the Shalek Lab in Boston. My interests lay in using computational approaches to better understand cellular biology in the context of diseases and cellular dysfunction (see also Work). I am especially fascinated by integrating omics technologies with prior biological knowledge."
+    "text": "Hi, nice to meet you! I’m Lucas.\nI am a M.Sc. student of biochemistry at Heidelberg University, currently working as a visiting student at the Shalek Lab in Boston. I am interested in using computers to better understand cell biology in the context of disease and cellular dysfunction (see also Work). I am particularly intrigued by the integration of omics technologies with prior biological knowledge."
   },
   {
     "objectID": "posts/2023-07-13-hello-world/hello-world.html",
@@ -102,7 +102,7 @@
     "href": "work.html#software",
     "title": "Work",
     "section": "Software",
-    "text": "Software\n\nLanguages\nipathapy Python | github A python package to create metabolic path maps with ipath3"
+    "text": "Software\n\nLanguages\nPython (advanced)\nR (intermediate)\nBash (advanced)\n\n\nPackages\nipathapy Python | github A python package to create metabolic path maps with ipath3"
   },
   {
     "objectID": "work.html#rewards-scholarships",
