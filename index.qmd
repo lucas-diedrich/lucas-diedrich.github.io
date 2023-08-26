@@ -18,7 +18,6 @@ about:
 Hi, nice to meet you! I'm Lucas. 
 
 I am a M.Sc. student of biochemistry at Heidelberg University, currently working as a visiting student at the Shalek Lab in Boston. 
-My interests lay in using computational approaches to better understand cellular biology in the context of diseases and cellular dysfunction (see also [Work](./work.qmd)). I am especially fascinated by integrating omics technologies with prior biological knowledge. 
-
+I am interested in using computers to better understand cell biology in the context of disease and cellular dysfunction (see also [Work](./work.qmd)). I am particularly intrigued by the integration of omics technologies with prior biological knowledge.
 
 <!-- ## Projects -->

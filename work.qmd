@@ -64,6 +64,14 @@ Energetics and kinetics of membrane permeation of photoresists for bioprinting L
 ## Software
 
 ### Languages 
+**Python** (*advanced*)
+
+**R** (*intermediate*)
+
+**Bash** (*advanced*)
+
+
+### Packages
 
 **ipathapy** Python | [github](https://github.com/lucas-diedrich/ipathapy.git)<br>
 A python package to create metabolic path maps with ipath3 
