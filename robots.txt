@@ -1,1 +1,1 @@
-Sitemap: https://github.com/lucas-diedrich/lucas-diedrich.github.io/sitemap.xml
+Sitemap: https://lucas-diedrich.github.io/sitemap.xml

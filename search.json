@@ -1,10 +1,45 @@
 [
   {
-    "objectID": "posts/index.html",
-    "href": "posts/index.html",
-    "title": "lucas-diedrich.github.io",
+    "objectID": "work.html",
+    "href": "work.html",
+    "title": "Work",
     "section": "",
-    "text": "Your birthday might kill you!\n\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2023\n\n\n\n\n\n\n  \n\n\n\n\nHello-world\n\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "My goal is to contribute to the understanding of the driving biological mechanisms of diseases in order to develop new cures, with a special fascination for our immune system. I am particuarly interested in combining existing public resources, mechanistic understanding of diseases and high throughput/omics data using computational methods to a more complete picture of the underlying causes."
+  },
+  {
+    "objectID": "work.html#relevant-experience",
+    "href": "work.html#relevant-experience",
+    "title": "Work",
+    "section": "Relevant experience",
+    "text": "Relevant experience\nMay 2023 - today  Shalek Lab Broad Institute | Ragon Institute of Harvard, MIT and MGH | IMES/MIT | Boston  Metaanalysis of recurrent T cell states in health and disease\nSeptember 2022 - December 2023  Alexandrov Lab EMBL Heidelberg | Heidelberg  Integrating immunocytochemistry with single cell metabolomics in primary human CD4+ T cells for drug screening. Experimental work, data analysis and computational work.\nFebruary 2022 - March 2023  Graeter Lab Heidelberg Institute for Theoretical Studies | Heidelberg  Evaluation of the membrane permeability of small molecules with molecular dynamics simulations. Establishing a computational pipeline for data analysis (Publication).\nMay 2022 - July 2023  Russell Lab Bioquant | Heidelberg  Computational biology. Evaluating the pathogenicity of missense variants in protein domains using public resources.\nMarch 2022 - October 2023  Hartmann Group Max Planck Institute for Biology | Tuebingen  Establishing a biophysical assay for the screening of natural and artificial ligands of the E3 ligase Cereblon."
+  },
+  {
+    "objectID": "work.html#education",
+    "href": "work.html#education",
+    "title": "Work",
+    "section": "Education",
+    "text": "Education\n2021 - today  Biochemistry M.Sc. Ruprecht-Karls-University Heidelberg | Heidelberg  Computational biology, biophysics, drug discovery\n2018 - 2021  Biochemistry B.Sc. Eberhard Karls University Tuebingen | Tuebingen"
+  },
+  {
+    "objectID": "work.html#social",
+    "href": "work.html#social",
+    "title": "Work",
+    "section": "Social",
+    "text": "Social\n2023  Member/Organizer German American Conference  Functional team social events\n2022 - today  IT-Team Student Body Chemistry/Biochemistry, Heidelberg  Member - Maintenance of website and IT infrastructure, email communication.\n2020-2021  Treasurer Student Body Biochemistry, Tuebingen  Treasurer of for the student body, an organization with 300 members.\n2021  STEM representative - University of Tuebingen  Representing the subject biochemistry at local high schools to motivate young talents for a career in STEM."
+  },
+  {
+    "objectID": "work.html#software",
+    "href": "work.html#software",
+    "title": "Work",
+    "section": "Software",
+    "text": "Software\n\nLanguages\nPython (advanced)\nR (intermediate)\nBash (advanced)\n\n\nPackages\nipathapy Python | github A python package to create metabolic path maps with ipath3\nsccoral Python | github | docs  A variational autoencoder with linear decoder for the inference of interpretable gene programs from single-cell data"
+  },
+  {
+    "objectID": "work.html#rewards-scholarships",
+    "href": "work.html#rewards-scholarships",
+    "title": "Work",
+    "section": "Rewards + Scholarships",
+    "text": "Rewards + Scholarships\nDecember 2020 - March 2024  German Scholarship Foundation\nMarch 2020 - December 2020  Deutschlandstipendium"
   },
   {
     "objectID": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html",
@@ -39,7 +74,7 @@
     "href": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html#the-real-world",
     "title": "Your birthday might kill you!",
     "section": "The real world",
-    "text": "The real world\nSo we have a simulation, an analytical model for our observations and further an intuitive explanation for this phenomenom. However, all of this still happened in our model world MB-15640423. Are these preditcions actually relevant in real life?\nNo, they are not! Even if we take our extremely simplified model and plug in more or less realistic numbers (using the above mentioned population statistcs), we see that there is almost no difference (relative change) between the likelihoods to die on our birthday or even the most extreme opposite (the day before our birthday).\n\n\nCode\nday_after_bday, pdeath = model(0.001/365, 365)\n\n\nfig, ax = plt.subplots(1,1)\n\nax.plot(day_after_bday, pdeath, \n        marker='', linestyle='-', linewidth=3, color='#555555', label='Our model')\n\nax.annotate(text=f'Relative change {(1-pdeath[0]/pdeath[-1])*100:.2g} %', xy=(0.5,0.6), xytext=(0,0), xycoords='axes fraction', textcoords='offset points', ha='center', va='center')\n\nax.set_ylabel('P(X)')\nax.set_ylim(pdeath.min()*0.9,pdeath.max()*1.1)\nax.set_xlabel(f'Day after birthday (365 day year)')\nax.legend(loc='upper right')\nplt.show()\n\n\n\n\n\nAlthough the statistical impact of this phenomenon is small, regrettably, there exists a genuine real-world occurrence known as the Birthday Effect, which suggests that individuals are more prone to passing away around the time of their birthdays than at other times. Yet, this correlation is rooted less in peculiar mathematics and more in tangible life factors, as the time around our birthdays is also associated with increased probabilities of alcohol and drug misuse, depressive periods, and other adversities that would be more fitting within the pages of a Shakespearean tale."
+    "text": "The real world\nSo we have a simulation, an analytical model for our observations and further an intuitive explanation for this phenomenom. However, all of this still happened in our model world MB-15640423. Are these preditcions actually relevant in real life?\nNo, they are not! Even if we take our extremely simplified model and plug in more or less realistic numbers (using the above mentioned population statistcs), we see that there is almost no difference (relative change) between the likelihoods to die on our birthday or even the most extreme opposite (the day before our birthday).\n\n\nCode\nday_after_bday, pdeath = model(0.001/365, 365)\n\n\nfig, ax = plt.subplots(1,1)\n\nax.plot(day_after_bday, pdeath, \n        marker='', linestyle='-', linewidth=3, color='#555555', label='Our model')\n\nax.annotate(text=f'Relative change {(1-pdeath[0]/pdeath[-1])*100:.2g} %', xy=(0.5,0.6), xytext=(0,0), xycoords='axes fraction', textcoords='offset points', ha='center', va='center')\n\nax.set_ylabel('P(X)')\nax.set_ylim(pdeath.min()*0.9,pdeath.max()*1.1)\nax.set_xlabel(f'Day after birthday (365 day year)')\nax.legend(loc='upper right')\nplt.show()\n\n\n\n\n\n\n\n\n\nAlthough the statistical impact of this phenomenon is small, regrettably, there exists a genuine real-world occurrence known as the Birthday Effect, which suggests that individuals are more prone to passing away around the time of their birthdays than at other times. Yet, this correlation is rooted less in peculiar mathematics and more in tangible life factors, as the time around our birthdays is also associated with increased probabilities of alcohol and drug misuse, depressive periods, and other adversities that would be more fitting within the pages of a Shakespearean tale."
   },
   {
     "objectID": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html#conclusion",
@@ -56,13 +91,6 @@
     "text": "Footnotes\n\n\nIt should be noted that there is an ongoing debate about his alleged birthday (April 23) and he may have been born on a different day in late April. ↩︎"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "About",
-    "section": "",
-    "text": "Hi, nice to meet you! I’m Lucas.\nI am a M.Sc. student of biochemistry at Heidelberg University, currently working as a visiting student at the Shalek Lab in Boston. I am interested in using computers to better understand cell biology in the context of disease and cellular dysfunction (see also Work). I am particularly intrigued by the integration of omics technologies with prior biological knowledge."
-  },
-  {
     "objectID": "posts/2023-07-13-hello-world/hello-world.html",
     "href": "posts/2023-07-13-hello-world/hello-world.html",
     "title": "Hello-world",
@@ -70,45 +98,17 @@
     "text": "My first blog post! How exciting!"
   },
   {
-    "objectID": "work.html",
-    "href": "work.html",
-    "title": "Work",
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "lucas-diedrich.github.io",
     "section": "",
-    "text": "My goal is to contribute to the understanding of the driving biological mechanisms of diseases in order to develop new cures, with a special fascination for our immune system. I am particuarly interested in combining existing public resources, mechanistic understanding of diseases and high throughput/omics data using computational methods to a more complete picture of the underlying causes."
+    "text": "Hello-world\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nYour birthday might kill you!\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "work.html#relevant-experience",
-    "href": "work.html#relevant-experience",
-    "title": "Work",
-    "section": "Relevant experience",
-    "text": "Relevant experience\nMay 2023 - today  Shalek Lab Broad Institute | Ragon Institute of Harvard, MIT and MGH | IMES/MIT | Boston  Metaanalysis of recurrent T cell states in health and disease\nSeptember 2022 - December 2023  Alexandrov Lab EMBL Heidelberg | Heidelberg  Integrating immunocytochemistry with single cell metabolomics in primary human CD4+ T cells for drug screening. Experimental work, data analysis and computational work.\nFebruary 2022 - March 2023  Graeter Lab Heidelberg Institute for Theoretical Studies | Heidelberg  Evaluation of the membrane permeability of small molecules with molecular dynamics simulations. Establishing a computational pipeline for data analysis. (Preprint)\nMay 2022 - July 2023  Russell Lab Bioquant | Heidelberg  Computational biology. Evaluating the pathogenicity of missense variants in protein domains using public resources.\nMarch 2022 - October 2023  Hartmann Group Max Planck Institute for Biology | Tuebingen  Establishing a biophysical assay for the screening of natural and artificial ligands of the E3 ligase Cereblon."
-  },
-  {
-    "objectID": "work.html#education",
-    "href": "work.html#education",
-    "title": "Work",
-    "section": "Education",
-    "text": "Education\n2021 - today  Biochemistry M.Sc. Ruprecht-Karls-University Heidelberg | Heidelberg  Computational biology, biophysics, drug discovery\n2018 - 2021  Biochemistry B.Sc. Eberhard Karls University Tuebingen | Tuebingen"
-  },
-  {
-    "objectID": "work.html#social",
-    "href": "work.html#social",
-    "title": "Work",
-    "section": "Social",
-    "text": "Social\n2023  Member/Organizer German American Conference  Functional team social events\n2022 - today  IT-Team Student Body Chemistry/Biochemistry, Heidelberg  Member - Maintenance of website and IT infrastructure, email communication.\n2020-2021  Treasurer Student Body Biochemistry, Tuebingen  Treasurer of for the student body, an organization with 300 members.\n2021  STEM representative - University of Tuebingen  Representing the subject biochemistry at local high schools to motivate young talents for a career in STEM."
-  },
-  {
-    "objectID": "work.html#software",
-    "href": "work.html#software",
-    "title": "Work",
-    "section": "Software",
-    "text": "Software\n\nLanguages\nPython (advanced)\nR (intermediate)\nBash (advanced)\n\n\nPackages\nipathapy Python | github A python package to create metabolic path maps with ipath3"
-  },
-  {
-    "objectID": "work.html#rewards-scholarships",
-    "href": "work.html#rewards-scholarships",
-    "title": "Work",
-    "section": "Rewards + Scholarships",
-    "text": "Rewards + Scholarships\nDecember 2020 - today  German Scholarship Foundation\nMarch 2020 - December 2020  Deutschlandstipendium"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About",
+    "section": "",
+    "text": "Hi, nice to meet you! I’m Lucas.\nI am a M.Sc. student of biochemistry at Heidelberg University, currently working as a visiting student at the Shalek Lab in Boston. I am interested in using computers to better understand cell biology in the context of disease and cellular dysfunction (see also Work). I am particularly intrigued by the integration of omics technologies with prior biological knowledge."
   }
 ]
