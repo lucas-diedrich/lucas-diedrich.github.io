@@ -17,7 +17,8 @@ Integrating immunocytochemistry with single cell metabolomics in primary human C
 
 *February 2022 - March 2023* <br>
 **Graeter Lab** Heidelberg Institute for Theoretical Studies | Heidelberg <br>
-Evaluation of the membrane permeability of small molecules with molecular dynamics simulations. Establishing a computational pipeline for data analysis. ([Preprint](https://doi.org/10.1101/2023.03.27.534360))
+Evaluation of the membrane permeability of small molecules with molecular dynamics simulations. Establishing a computational pipeline for data analysis 
+([Publication](https://doi.org/10.1002/adfm.202315731)).
 
 *May 2022 - July 2023* <br>
 **Russell Lab** Bioquant | Heidelberg <br>
@@ -76,11 +77,13 @@ Energetics and kinetics of membrane permeation of photoresists for bioprinting L
 **ipathapy** Python | [github](https://github.com/lucas-diedrich/ipathapy.git)<br>
 A python package to create metabolic path maps with ipath3 
 
+**sccoral** Python | [github](https://github.com/lucas-diedrich/sccoral) | [docs](https://sccoral.readthedocs.io/en/latest/) <br>
+A variational autoencoder with linear decoder for the inference of interpretable gene programs from single-cell data
 
 
 ## Rewards + Scholarships 
 
-*December 2020 - today* <br>
+*December 2020 - March 2024* <br>
 **German Scholarship Foundation**
 
 *March 2020 - December 2020* <br>
