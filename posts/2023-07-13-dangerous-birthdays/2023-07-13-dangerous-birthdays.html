@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.552">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2023-07-14">
 
-<title>lucas-diedrich.github.io - Your birthday might kill you!</title>
+<title>Your birthday might kill you! – lucas-diedrich.github.io</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -34,7 +34,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -102,7 +102,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -147,7 +147,7 @@ window.Quarto = {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -166,7 +166,7 @@ window.Quarto = {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools tools-wide">
+            <div class="quarto-navbar-tools tools-wide">
     <a href="https://twitter.com/lucas__1406/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
     <a href="https://www.linkedin.com/in/lucas-diedrich" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
     <a href="https://github.com/lucas-diedrich" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
@@ -262,7 +262,7 @@ Warning
 <p>Based on these assumptions, we can create a simple simulation: We first define a function <code>life</code> that simulates the life of a single individual: For every day, the individual either survives or dies with a constant probability (here: <span class="math inline">\(p_{death}=0.05\)</span>). For every individual, the function <code>life</code> runs until it reaches the day of death of the individual and then returns the number of days that the person survived (<code>days_lived</code>). We repeat that for a few thousand simulations (<em>individuals</em>) to get an estimation of the distribution. To estimate the variability of our simulation, we rerun this simulation 5 times.</p>
 <p>We can figure out whether the individual died on their birthday or not by using the remainder (modulo operation) of the division <span class="math inline">\(\frac{\text{days lived}}{k}\)</span>. E.g. if a person died on their birtday, they survived 0, 10, 20, 30, 40… days in our model world. Thus, when dividing by the length of the year <span class="math inline">\(k\)</span>, the remainder will always be zero (Mathematically speaking: <span class="math inline">\(y\times k \equiv 0 \:\text{mod}\:k\)</span> for <span class="math inline">\(y \in \mathbb{N}^0\)</span>). If a person dies one day after their birthday, the fraction <span class="math inline">\(\frac{\text{days lived}}{k}\)</span> will have the remainder 1 and so on…</p>
 <p>Implementing this model in python (see hidden code cells) and plotting the results looks like this:</p>
-<div id="a9cdc092" class="cell" data-execution_count="1">
+<div class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import modules</span></span>
@@ -288,7 +288,7 @@ Warning
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>n_replicates <span class="op">=</span> <span class="dv">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="e2ccc1f8" class="cell" data-execution_count="2">
+<div class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define functions </span></span>
@@ -322,7 +322,7 @@ Warning
 <span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> pd.Series(counts<span class="op">/</span>np.<span class="bu">sum</span>(counts), index<span class="op">=</span>days)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="1d4909c7" class="cell" data-execution_count="3">
+<div class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Run model multiple times to get estimate of uncertainty</span></span>
@@ -348,7 +348,7 @@ Warning
 <span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>ci <span class="op">=</span> t.ppf(<span class="dv">1</span><span class="op">-</span>alpha_level<span class="op">/</span><span class="dv">2</span>, n_replicates<span class="op">-</span><span class="dv">1</span>)<span class="op">*</span>replicates.std(axis<span class="op">=</span><span class="dv">1</span>)<span class="op">/</span>np.sqrt(n_replicates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="217cd4f0" class="cell" data-execution_count="4">
+<div class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot </span></span>
@@ -436,7 +436,7 @@ Warning
 \end{equation}\]</span></p>
 <p>Plotting the analytical solution together with our simulated values provides a pretty decent agreement:</p>
 <!-- Missing - normalization -->
-<div id="d67a0bb0" class="cell" data-execution_count="5">
+<div class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> model(probability_of_death: <span class="bu">float</span>, length_of_year: <span class="bu">int</span> <span class="op">=</span> <span class="dv">365</span>): </span>
@@ -494,7 +494,7 @@ Warning
 <h2 class="anchored" data-anchor-id="the-real-world">The real world</h2>
 <p>So we have a simulation, an analytical model for our observations and further an intuitive explanation for this phenomenom. However, all of this still happened in our model world <code>MB-15640423</code>. Are these preditcions actually relevant in real life?</p>
 <p>No, they are not! Even if we take our extremely simplified model and plug in more or less realistic numbers (using the above mentioned population statistcs), we see that there is almost no difference (relative change) between the likelihoods to die on our birthday or even the most extreme opposite (the day before our birthday).</p>
-<div id="40190f3e" class="cell" data-execution_count="6">
+<div class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>day_after_bday, pdeath <span class="op">=</span> model(<span class="fl">0.001</span><span class="op">/</span><span class="dv">365</span>, <span class="dv">365</span>)</span>
@@ -575,18 +575,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -618,7 +607,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp("https:\/\/lucas-diedrich\.github\.io\/");
@@ -626,7 +637,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

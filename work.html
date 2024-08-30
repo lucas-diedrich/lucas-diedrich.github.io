@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.552">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>lucas-diedrich.github.io - Work</title>
+<title>Work – lucas-diedrich.github.io</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,6 +67,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -83,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -102,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools tools-wide">
+            <div class="quarto-navbar-tools tools-wide">
     <a href="https://twitter.com/lucas__1406/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
     <a href="https://www.linkedin.com/in/lucas-diedrich" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
     <a href="https://github.com/lucas-diedrich" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
@@ -122,10 +151,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#relevant-experience" id="toc-relevant-experience" class="nav-link active" data-scroll-target="#relevant-experience">Relevant experience</a></li>
   <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
   <li><a href="#social" id="toc-social" class="nav-link" data-scroll-target="#social">Social</a></li>
+  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">Publications</a></li>
   <li><a href="#software" id="toc-software" class="nav-link" data-scroll-target="#software">Software</a>
   <ul class="collapse">
   <li><a href="#languages" id="toc-languages" class="nav-link" data-scroll-target="#languages">Languages</a></li>
-  <li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages">Packages</a></li>
+  <li><a href="#software-packages" id="toc-software-packages" class="nav-link" data-scroll-target="#software-packages">Software packages</a></li>
   </ul></li>
   <li><a href="#rewards-scholarships" id="toc-rewards-scholarships" class="nav-link" data-scroll-target="#rewards-scholarships">Rewards + Scholarships</a></li>
   </ul>
@@ -154,30 +184,34 @@ ul.task-list li input[type="checkbox"] {
 
 
 <blockquote class="blockquote">
-<p>My goal is to contribute to the understanding of the driving biological mechanisms of diseases in order to develop new cures, with a special fascination for our immune system. I am particuarly interested in combining existing public resources, mechanistic understanding of diseases and high throughput/omics data using computational methods to a more complete picture of the underlying causes.</p>
+<p>My goal is to contribute to the understanding of the driving biological mechanisms of diseases in order to develop new cures, with a special fascination for our immune system. I am particularly interested in combining existing public resources, mechanistic understanding of diseases, and high throughput/omics data using computational methods to a more complete picture of the underlying causes.</p>
 </blockquote>
 <section id="relevant-experience" class="level2">
 <h2 class="anchored" data-anchor-id="relevant-experience">Relevant experience</h2>
-<p><em>May 2023 - today</em> <br> <strong>Shalek Lab</strong> Broad Institute | Ragon Institute of Harvard, MIT and MGH | IMES/MIT | Boston <br> Metaanalysis of recurrent T cell states in health and disease</p>
+<p><em>Incoming | October 2024</em> <br> <strong>Mann Lab</strong> Max Planck Institute for Biochemistry | Munich <br> PhD studies in the department for <em>Proteomics and Signal Transduction</em>.</p>
+<p><em>May 2023 - July 2024</em> <br> <strong>Shalek Lab</strong> Broad Institute | Ragon Institute of Harvard, MIT and MGH | IMES/MIT | Boston <br> Metaanalysis of recurrent T cell states in health and disease. Development, validation, and application of a novel deep learning model for the integration of experimental side information with single-cell RNAseq data (<a href="https://github.com/lucas-diedrich/sccoral.git"><span class="math inline">\(\rightarrow\)</span> scCoral</a>).</p>
 <p><em>September 2022 - December 2023</em> <br> <strong>Alexandrov Lab</strong> EMBL Heidelberg | Heidelberg <br> Integrating immunocytochemistry with single cell metabolomics in primary human CD4<sup>+</sup> T cells for drug screening. Experimental work, data analysis and computational work.</p>
-<p><em>February 2022 - March 2023</em> <br> <strong>Graeter Lab</strong> Heidelberg Institute for Theoretical Studies | Heidelberg <br> Evaluation of the membrane permeability of small molecules with molecular dynamics simulations. Establishing a computational pipeline for data analysis (<a href="https://doi.org/10.1002/adfm.202315731">Publication</a>).</p>
+<p><em>February 2022 - March 2023</em> <br> <strong>Graeter Lab</strong> Heidelberg Institute for Theoretical Studies | Heidelberg <br> Evaluation of the membrane permeability of small molecules with molecular dynamics simulations. Establishing a computational pipeline for data analysis (<a href="https://doi.org/10.1002/adfm.202315731"><span class="math inline">\(\rightarrow\)</span> Manuscript</a>).</p>
 <p><em>May 2022 - July 2023</em> <br> <strong>Russell Lab</strong> Bioquant | Heidelberg <br> Computational biology. Evaluating the pathogenicity of missense variants in protein domains using public resources.</p>
-<p><em>March 2022 - October 2023</em> <br> <strong>Hartmann Group</strong> Max Planck Institute for Biology | Tuebingen <br> Establishing a biophysical assay for the screening of natural and artificial ligands of the E3 ligase Cereblon.</p>
+<p><em>March 2022 - October 2023</em> <br> <strong>Hartmann Group</strong> Max Planck Institute for Biology | Tübingen <br> Establishing a biophysical assay for the screening of natural and artificial ligands of the E3 ligase Cereblon.</p>
 </section>
 <section id="education" class="level2">
 <h2 class="anchored" data-anchor-id="education">Education</h2>
-<p><em>2021 - today</em> <br> <strong>Biochemistry M.Sc.</strong> Ruprecht-Karls-University Heidelberg | Heidelberg <br> Computational biology, biophysics, drug discovery</p>
-<p><em>2018 - 2021</em> <br> <strong>Biochemistry B.Sc.</strong> Eberhard Karls University Tuebingen | Tuebingen <br> <!-- Final Grade: 1.1  --></p>
+<p><em>2021 - 2024</em> <br> <strong>Biochemistry M.Sc.</strong> Ruprecht-Karls-University Heidelberg | Heidelberg <br> Final Grade: 1.0 <br> Computational biology, biophysics, drug discovery</p>
+<p><em>2018 - 2021</em> <br> <strong>Biochemistry B.Sc.</strong> Eberhard Karls University Tübingen | Tuebingen <br> Final Grade: 1.1</p>
 </section>
 <section id="social" class="level2">
 <h2 class="anchored" data-anchor-id="social">Social</h2>
 <p><em>2023</em> <br> <strong>Member/Organizer</strong> German American Conference <br> Functional team social events</p>
 <p><em>2022 - today</em> <br> <strong>IT-Team</strong> Student Body Chemistry/Biochemistry, Heidelberg <br> Member - Maintenance of website and IT infrastructure, email communication.</p>
-<p><em>2020-2021</em> <br> <strong>Treasurer</strong> Student Body Biochemistry, Tuebingen <br> Treasurer of for the student body, an organization with 300 members.</p>
-<p><em>2021</em> <br> <strong>STEM representative</strong> - University of Tuebingen <br> Representing the subject biochemistry at local high schools to motivate young talents for a career in STEM.</p>
-<!-- ## Publications 
-
-Energetics and kinetics of membrane permeation of photoresists for bioprinting Lucas Diedrich, Matthias Brosz, Tobias Abele, Salome Steinke, Frauke Gräter, Kerstin Göpfrich, Camilo Aponte-Santamaría bioRxiv 2023.03.27.534360; doi: https://doi.org/10.1101/2023.03.27.534360 -->
+<p><em>2020-2021</em> <br> <strong>Treasurer</strong> Student Body Biochemistry, Tübingen <br> Treasurer of for the student body, an organization with 300 members.</p>
+<p><em>2021</em> <br> <strong>STEM representative</strong> University of Tübingen <br> Representing the subject biochemistry at local high schools to motivate young talents for a career in STEM.</p>
+</section>
+<section id="publications" class="level2">
+<h2 class="anchored" data-anchor-id="publications">Publications</h2>
+<ul>
+<li>L. Diedrich, M. Brosz, T. Abele, N. Urbanek, S. Steinke, F. Gräter, K. Göpfrich, C. Aponte-Santamaría, Energetics and Kinetics of Membrane Permeation of Photoresists for Bioprinting. Adv. Funct. Mater. 2024, 34, 2315731. <a href="https://doi.org/10.1002/adfm.202315731">https://doi.org/10.1002/adfm.202315731</a></li>
+</ul>
 </section>
 <section id="software" class="level2">
 <h2 class="anchored" data-anchor-id="software">Software</h2>
@@ -187,8 +221,8 @@ Energetics and kinetics of membrane permeation of photoresists for bioprinting L
 <p><strong>R</strong> (<em>intermediate</em>)</p>
 <p><strong>Bash</strong> (<em>advanced</em>)</p>
 </section>
-<section id="packages" class="level3">
-<h3 class="anchored" data-anchor-id="packages">Packages</h3>
+<section id="software-packages" class="level3">
+<h3 class="anchored" data-anchor-id="software-packages">Software packages</h3>
 <p><strong>ipathapy</strong> Python | <a href="https://github.com/lucas-diedrich/ipathapy.git">github</a><br> A python package to create metabolic path maps with ipath3</p>
 <p><strong>sccoral</strong> Python | <a href="https://github.com/lucas-diedrich/sccoral">github</a> | <a href="https://sccoral.readthedocs.io/en/latest/">docs</a> <br> A variational autoencoder with linear decoder for the inference of interpretable gene programs from single-cell data</p>
 </section>
@@ -196,6 +230,7 @@ Energetics and kinetics of membrane permeation of photoresists for bioprinting L
 <section id="rewards-scholarships" class="level2">
 <h2 class="anchored" data-anchor-id="rewards-scholarships">Rewards + Scholarships</h2>
 <p><em>December 2020 - March 2024</em> <br> <strong>German Scholarship Foundation</strong></p>
+<p><em>April 2024 - July 2024</em> <br> <strong>ERASMUS+</strong></p>
 <p><em>March 2020 - December 2020</em> <br> <strong>Deutschlandstipendium</strong></p>
 
 
@@ -237,18 +272,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -280,7 +304,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp("https:\/\/lucas-diedrich\.github\.io\/");
@@ -288,7 +334,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

@@ -1,45 +1,73 @@
 [
   {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "lucas-diedrich.github.io",
+    "section": "",
+    "text": "Hello-world\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nYour birthday might kill you!\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2023\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2023-07-13-hello-world/hello-world.html",
+    "href": "posts/2023-07-13-hello-world/hello-world.html",
+    "title": "Hello-world",
+    "section": "",
+    "text": "My first blog post! How exciting!"
+  },
+  {
     "objectID": "work.html",
     "href": "work.html",
     "title": "Work",
     "section": "",
-    "text": "My goal is to contribute to the understanding of the driving biological mechanisms of diseases in order to develop new cures, with a special fascination for our immune system. I am particuarly interested in combining existing public resources, mechanistic understanding of diseases and high throughput/omics data using computational methods to a more complete picture of the underlying causes."
+    "text": "My goal is to contribute to the understanding of the driving biological mechanisms of diseases in order to develop new cures, with a special fascination for our immune system. I am particularly interested in combining existing public resources, mechanistic understanding of diseases, and high throughput/omics data using computational methods to a more complete picture of the underlying causes."
   },
   {
     "objectID": "work.html#relevant-experience",
     "href": "work.html#relevant-experience",
     "title": "Work",
     "section": "Relevant experience",
-    "text": "Relevant experience\nMay 2023 - today  Shalek Lab Broad Institute | Ragon Institute of Harvard, MIT and MGH | IMES/MIT | Boston  Metaanalysis of recurrent T cell states in health and disease\nSeptember 2022 - December 2023  Alexandrov Lab EMBL Heidelberg | Heidelberg  Integrating immunocytochemistry with single cell metabolomics in primary human CD4+ T cells for drug screening. Experimental work, data analysis and computational work.\nFebruary 2022 - March 2023  Graeter Lab Heidelberg Institute for Theoretical Studies | Heidelberg  Evaluation of the membrane permeability of small molecules with molecular dynamics simulations. Establishing a computational pipeline for data analysis (Publication).\nMay 2022 - July 2023  Russell Lab Bioquant | Heidelberg  Computational biology. Evaluating the pathogenicity of missense variants in protein domains using public resources.\nMarch 2022 - October 2023  Hartmann Group Max Planck Institute for Biology | Tuebingen  Establishing a biophysical assay for the screening of natural and artificial ligands of the E3 ligase Cereblon."
+    "text": "Relevant experience\nIncoming | October 2024  Mann Lab Max Planck Institute for Biochemistry | Munich  PhD studies in the department for Proteomics and Signal Transduction.\nMay 2023 - July 2024  Shalek Lab Broad Institute | Ragon Institute of Harvard, MIT and MGH | IMES/MIT | Boston  Metaanalysis of recurrent T cell states in health and disease. Development, validation, and application of a novel deep learning model for the integration of experimental side information with single-cell RNAseq data (\\(\\rightarrow\\) scCoral).\nSeptember 2022 - December 2023  Alexandrov Lab EMBL Heidelberg | Heidelberg  Integrating immunocytochemistry with single cell metabolomics in primary human CD4+ T cells for drug screening. Experimental work, data analysis and computational work.\nFebruary 2022 - March 2023  Graeter Lab Heidelberg Institute for Theoretical Studies | Heidelberg  Evaluation of the membrane permeability of small molecules with molecular dynamics simulations. Establishing a computational pipeline for data analysis (\\(\\rightarrow\\) Manuscript).\nMay 2022 - July 2023  Russell Lab Bioquant | Heidelberg  Computational biology. Evaluating the pathogenicity of missense variants in protein domains using public resources.\nMarch 2022 - October 2023  Hartmann Group Max Planck Institute for Biology | Tübingen  Establishing a biophysical assay for the screening of natural and artificial ligands of the E3 ligase Cereblon."
   },
   {
     "objectID": "work.html#education",
     "href": "work.html#education",
     "title": "Work",
     "section": "Education",
-    "text": "Education\n2021 - today  Biochemistry M.Sc. Ruprecht-Karls-University Heidelberg | Heidelberg  Computational biology, biophysics, drug discovery\n2018 - 2021  Biochemistry B.Sc. Eberhard Karls University Tuebingen | Tuebingen"
+    "text": "Education\n2021 - 2024  Biochemistry M.Sc. Ruprecht-Karls-University Heidelberg | Heidelberg  Final Grade: 1.0  Computational biology, biophysics, drug discovery\n2018 - 2021  Biochemistry B.Sc. Eberhard Karls University Tübingen | Tuebingen  Final Grade: 1.1"
   },
   {
     "objectID": "work.html#social",
     "href": "work.html#social",
     "title": "Work",
     "section": "Social",
-    "text": "Social\n2023  Member/Organizer German American Conference  Functional team social events\n2022 - today  IT-Team Student Body Chemistry/Biochemistry, Heidelberg  Member - Maintenance of website and IT infrastructure, email communication.\n2020-2021  Treasurer Student Body Biochemistry, Tuebingen  Treasurer of for the student body, an organization with 300 members.\n2021  STEM representative - University of Tuebingen  Representing the subject biochemistry at local high schools to motivate young talents for a career in STEM."
+    "text": "Social\n2023  Member/Organizer German American Conference  Functional team social events\n2022 - today  IT-Team Student Body Chemistry/Biochemistry, Heidelberg  Member - Maintenance of website and IT infrastructure, email communication.\n2020-2021  Treasurer Student Body Biochemistry, Tübingen  Treasurer of for the student body, an organization with 300 members.\n2021  STEM representative University of Tübingen  Representing the subject biochemistry at local high schools to motivate young talents for a career in STEM."
+  },
+  {
+    "objectID": "work.html#publications",
+    "href": "work.html#publications",
+    "title": "Work",
+    "section": "Publications",
+    "text": "Publications\n\nL. Diedrich, M. Brosz, T. Abele, N. Urbanek, S. Steinke, F. Gräter, K. Göpfrich, C. Aponte-Santamaría, Energetics and Kinetics of Membrane Permeation of Photoresists for Bioprinting. Adv. Funct. Mater. 2024, 34, 2315731. https://doi.org/10.1002/adfm.202315731"
   },
   {
     "objectID": "work.html#software",
     "href": "work.html#software",
     "title": "Work",
     "section": "Software",
-    "text": "Software\n\nLanguages\nPython (advanced)\nR (intermediate)\nBash (advanced)\n\n\nPackages\nipathapy Python | github A python package to create metabolic path maps with ipath3\nsccoral Python | github | docs  A variational autoencoder with linear decoder for the inference of interpretable gene programs from single-cell data"
+    "text": "Software\n\nLanguages\nPython (advanced)\nR (intermediate)\nBash (advanced)\n\n\nSoftware packages\nipathapy Python | github A python package to create metabolic path maps with ipath3\nsccoral Python | github | docs  A variational autoencoder with linear decoder for the inference of interpretable gene programs from single-cell data"
   },
   {
     "objectID": "work.html#rewards-scholarships",
     "href": "work.html#rewards-scholarships",
     "title": "Work",
     "section": "Rewards + Scholarships",
-    "text": "Rewards + Scholarships\nDecember 2020 - March 2024  German Scholarship Foundation\nMarch 2020 - December 2020  Deutschlandstipendium"
+    "text": "Rewards + Scholarships\nDecember 2020 - March 2024  German Scholarship Foundation\nApril 2024 - July 2024  ERASMUS+\nMarch 2020 - December 2020  Deutschlandstipendium"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About",
+    "section": "",
+    "text": "Hi, nice to meet you! I’m Lucas.\nI am an incoming PhD student in computational biology at the Mann Lab at the Max Planck Institute for Biochemistry. My goal is to use bioinformatics to better understand cell biology in the context of disease and cellular dysfunction. I am particularly interested in single-cell and spatial -omics (including metabolomics, transcriptomics, and proteomics, \\(\\rightarrow\\) Work) and how we can leverage these highly resolved technologies to identify targets for novel therapies. I hope to contribute to these questions with open, accessible, and reproducible software."
   },
   {
     "objectID": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html",
@@ -89,26 +117,5 @@
     "title": "Your birthday might kill you!",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nIt should be noted that there is an ongoing debate about his alleged birthday (April 23) and he may have been born on a different day in late April. ↩︎"
-  },
-  {
-    "objectID": "posts/2023-07-13-hello-world/hello-world.html",
-    "href": "posts/2023-07-13-hello-world/hello-world.html",
-    "title": "Hello-world",
-    "section": "",
-    "text": "My first blog post! How exciting!"
-  },
-  {
-    "objectID": "posts/index.html",
-    "href": "posts/index.html",
-    "title": "lucas-diedrich.github.io",
-    "section": "",
-    "text": "Hello-world\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nYour birthday might kill you!\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2023\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "About",
-    "section": "",
-    "text": "Hi, nice to meet you! I’m Lucas.\nI am a M.Sc. student of biochemistry at Heidelberg University, currently working as a visiting student at the Shalek Lab in Boston. I am interested in using computers to better understand cell biology in the context of disease and cellular dysfunction (see also Work). I am particularly intrigued by the integration of omics technologies with prior biological knowledge."
   }
 ]
