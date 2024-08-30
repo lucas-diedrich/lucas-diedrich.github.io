@@ -2,14 +2,18 @@
 title: "Work"
 ---
 
-> My goal is to contribute to the understanding of the driving biological mechanisms of diseases in order to develop new cures, with a special fascination for our immune system. I am particuarly interested in combining existing public resources, mechanistic understanding of diseases and high throughput/omics data using computational methods to a more complete picture of the underlying causes.
+> My goal is to contribute to the understanding of the driving biological mechanisms of diseases in order to develop new cures, with a special fascination for our immune system. I am particularly interested in combining existing public resources, mechanistic understanding of diseases, and high throughput/omics data using computational methods to a more complete picture of the underlying causes.
 
  
 ## Relevant experience 
 
-*May 2023 - today* <br>
+*Incoming | October 2024* <br>
+**Mann Lab** Max Planck Institute for Biochemistry | Munich <br>
+PhD studies in the department for *Proteomics and Signal Transduction*. 
+
+*May 2023 - July 2024* <br>
 **Shalek Lab** Broad Institute | Ragon Institute of Harvard, MIT and MGH | IMES/MIT | Boston <br>
-Metaanalysis of recurrent T cell states in health and disease
+Metaanalysis of recurrent T cell states in health and disease. Development, validation, and application of a novel deep learning model for the integration of experimental side information with single-cell RNAseq data ([$\rightarrow$ scCoral](https://github.com/lucas-diedrich/sccoral.git)). 
 
 *September 2022 - December 2023* <br>
 **Alexandrov Lab** EMBL Heidelberg | Heidelberg <br>
@@ -18,26 +22,27 @@ Integrating immunocytochemistry with single cell metabolomics in primary human C
 *February 2022 - March 2023* <br>
 **Graeter Lab** Heidelberg Institute for Theoretical Studies | Heidelberg <br>
 Evaluation of the membrane permeability of small molecules with molecular dynamics simulations. Establishing a computational pipeline for data analysis 
-([Publication](https://doi.org/10.1002/adfm.202315731)).
+([$\rightarrow$ Manuscript](https://doi.org/10.1002/adfm.202315731)).
 
 *May 2022 - July 2023* <br>
 **Russell Lab** Bioquant | Heidelberg <br>
 Computational biology. Evaluating the pathogenicity of missense variants in protein domains using public resources. 
 
 *March 2022 - October 2023* <br>
-**Hartmann Group** Max Planck Institute for Biology | Tuebingen <br>
+**Hartmann Group** Max Planck Institute for Biology | Tübingen <br>
 Establishing a biophysical assay for the screening of natural and artificial ligands of the E3 ligase Cereblon. 
 
 
 ## Education 
 
-*2021 - today* <br>
+*2021 - 2024* <br>
 **Biochemistry M.Sc.** Ruprecht-Karls-University Heidelberg | Heidelberg <br>
+Final Grade: 1.0 <br> 
 Computational biology, biophysics, drug discovery 
 
 *2018 - 2021* <br>
-**Biochemistry B.Sc.** Eberhard Karls University Tuebingen | Tuebingen <br>
-<!-- Final Grade: 1.1  -->
+**Biochemistry B.Sc.** Eberhard Karls University Tübingen | Tuebingen <br>
+Final Grade: 1.1 
 
 
 ## Social 
@@ -51,16 +56,16 @@ Functional team social events
 Member - Maintenance of website and IT infrastructure, email communication. 
 
 *2020-2021* <br>
-**Treasurer** Student Body Biochemistry, Tuebingen <br>
+**Treasurer** Student Body Biochemistry, Tübingen <br>
 Treasurer of for the student body, an organization with 300 members. 
 
 *2021* <br>
-**STEM representative** - University of Tuebingen <br>
+**STEM representative** University of Tübingen <br>
 Representing the subject biochemistry at local high schools to motivate young talents for a career in STEM. 
 
-<!-- ## Publications 
+## Publications 
 
-Energetics and kinetics of membrane permeation of photoresists for bioprinting Lucas Diedrich, Matthias Brosz, Tobias Abele, Salome Steinke, Frauke Gräter, Kerstin Göpfrich, Camilo Aponte-Santamaría bioRxiv 2023.03.27.534360; doi: https://doi.org/10.1101/2023.03.27.534360 -->
+- L. Diedrich, M. Brosz, T. Abele, N. Urbanek, S. Steinke, F. Gräter, K. Göpfrich, C. Aponte-Santamaría, Energetics and Kinetics of Membrane Permeation of Photoresists for Bioprinting. Adv. Funct. Mater. 2024, 34, 2315731. [https://doi.org/10.1002/adfm.202315731](https://doi.org/10.1002/adfm.202315731)
 
 ## Software
 
@@ -72,7 +77,7 @@ Energetics and kinetics of membrane permeation of photoresists for bioprinting L
 **Bash** (*advanced*)
 
 
-### Packages
+### Software packages
 
 **ipathapy** Python | [github](https://github.com/lucas-diedrich/ipathapy.git)<br>
 A python package to create metabolic path maps with ipath3 
@@ -85,6 +90,9 @@ A variational autoencoder with linear decoder for the inference of interpretable
 
 *December 2020 - March 2024* <br>
 **German Scholarship Foundation**
+
+*April 2024 - July 2024*  <br>
+**ERASMUS+**
 
 *March 2020 - December 2020* <br>
 **Deutschlandstipendium**

@@ -17,7 +17,7 @@ about:
 
 Hi, nice to meet you! I'm Lucas. 
 
-I am a M.Sc. student of biochemistry at Heidelberg University, currently working as a visiting student at the Shalek Lab in Boston. 
-I am interested in using computers to better understand cell biology in the context of disease and cellular dysfunction (see also [Work](./work.qmd)). I am particularly intrigued by the integration of omics technologies with prior biological knowledge.
+I am an incoming PhD student in computational biology at the [Mann Lab](https://www.biochem.mpg.de/mann) at the Max Planck Institute for Biochemistry. 
+My goal is to use bioinformatics to better understand cell biology in the context of disease and cellular dysfunction. I am particularly interested in single-cell and spatial -omics (including metabolomics, transcriptomics, and proteomics, [$\rightarrow$ Work](./work.qmd)) and how we can leverage these highly resolved technologies to identify targets for novel therapies. I hope to contribute to these questions with open, accessible, and reproducible software.
 
 <!-- ## Projects -->
