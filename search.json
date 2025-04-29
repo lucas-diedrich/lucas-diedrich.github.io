@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "posts/index.html",
-    "href": "posts/index.html",
-    "title": "lucas-diedrich.github.io",
-    "section": "",
-    "text": "Hello-world\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nYour birthday might kill you!\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2023\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/2023-07-13-hello-world/hello-world.html",
-    "href": "posts/2023-07-13-hello-world/hello-world.html",
-    "title": "Hello-world",
-    "section": "",
-    "text": "My first blog post! How exciting!"
-  },
-  {
     "objectID": "work.html",
     "href": "work.html",
     "title": "Work",
@@ -56,11 +42,18 @@
     "text": "Software\n\nLanguages\nPython (advanced)\nR (intermediate)\nBash (advanced)\n\n\nSoftware packages\nipathapy Python | github A python package to create metabolic path maps with ipath3\nsccoral Python | github | docs  A variational autoencoder with linear decoder for the inference of interpretable gene programs from single-cell data"
   },
   {
-    "objectID": "work.html#rewards-scholarships",
-    "href": "work.html#rewards-scholarships",
+    "objectID": "work.html#scholarships",
+    "href": "work.html#scholarships",
     "title": "Work",
-    "section": "Rewards + Scholarships",
-    "text": "Rewards + Scholarships\nDecember 2020 - March 2024  German Scholarship Foundation\nApril 2024 - July 2024  ERASMUS+\nMarch 2020 - December 2020  Deutschlandstipendium"
+    "section": "Scholarships",
+    "text": "Scholarships\nDecember 2020 - March 2024  German Scholarship Foundation\nApril 2024 - July 2024  ERASMUS+\nMarch 2020 - December 2020  Deutschlandstipendium"
+  },
+  {
+    "objectID": "work.html#rewards",
+    "href": "work.html#rewards",
+    "title": "Work",
+    "section": "Rewards",
+    "text": "Rewards\nJanuary 2025  jGBM Master’s thesis Reward  Best Master’s thesis in Bioinformatics in the year 2024."
   },
   {
     "objectID": "index.html",
@@ -68,6 +61,13 @@
     "title": "About",
     "section": "",
     "text": "Hi, nice to meet you! I’m Lucas.\nI am an incoming PhD student in computational biology at the Mann Lab at the Max Planck Institute for Biochemistry. My goal is to use bioinformatics to better understand cell biology in the context of disease and cellular dysfunction. I am particularly interested in single-cell and spatial -omics (including metabolomics, transcriptomics, and proteomics, \\(\\rightarrow\\) Work) and how we can leverage these highly resolved technologies to identify targets for novel therapies. I hope to contribute to these questions with open, accessible, and reproducible software."
+  },
+  {
+    "objectID": "posts/2023-07-13-hello-world/hello-world.html",
+    "href": "posts/2023-07-13-hello-world/hello-world.html",
+    "title": "Hello-world",
+    "section": "",
+    "text": "My first blog post! How exciting!"
   },
   {
     "objectID": "posts/2023-07-13-dangerous-birthdays/2023-07-13-dangerous-birthdays.html",
@@ -117,5 +117,12 @@
     "title": "Your birthday might kill you!",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nIt should be noted that there is an ongoing debate about his alleged birthday (April 23) and he may have been born on a different day in late April. ↩︎"
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "lucas-diedrich.github.io",
+    "section": "",
+    "text": "Your birthday might kill you!\n\n\n\n\n\n\n\n\nJul 14, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nHello-world\n\n\n\n\n\n\n\n\nJul 14, 2023\n\n\n\n\n\nNo matching items"
   }
 ]
