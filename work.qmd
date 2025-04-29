@@ -86,7 +86,7 @@ A python package to create metabolic path maps with ipath3
 A variational autoencoder with linear decoder for the inference of interpretable gene programs from single-cell data
 
 
-## Rewards + Scholarships 
+## Scholarships 
 
 *December 2020 - March 2024* <br>
 **German Scholarship Foundation**
@@ -96,3 +96,9 @@ A variational autoencoder with linear decoder for the inference of interpretable
 
 *March 2020 - December 2020* <br>
 **Deutschlandstipendium**
+
+
+## Rewards 
+*January 2025* <br>
+**jGBM Master's thesis Reward** <br>
+Best Master's thesis in Bioinformatics in the year 2024. 
